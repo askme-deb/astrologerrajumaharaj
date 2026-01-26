@@ -3,11 +3,17 @@
 @section('title', 'Home')
 
 @section('content')
+
 <section class="banner">
     <div class="slider">
-        <img src="images/banner/banner-1.png" alt="">
-        <img src="images/banner/banner-2.png" alt="">
-        <img src="images/banner/banner-3.png" alt="">
+        <img src="{{ asset('assets/images/banner/banner-1.png') }}" alt="">
+        <img src="{{ asset('assets/images/banner/banner-2.png') }}" alt="">
+        <img src="{{ asset('assets/images/banner/banner-3.png') }}" alt="">
+        <img src="{{ asset('assets/images/banner/banner-4.png') }}" alt="">
+        <img src="{{ asset('assets/images/banner/banner-5.png') }}" alt="">
+        <img src="{{ asset('assets/images/banner/banner-6.png') }}" alt="">
+        <img src="{{ asset('assets/images/banner/banner-7.png') }}" alt="">
+
     </div>
 
     <div class="banner-content">
@@ -29,7 +35,7 @@
 
                 <div class="card">
                     <div class="card-icon">
-                        <img src="images/1st moon.png" alt="Planet Icon">
+                        <img src="{{ asset('assets/images/1st moon.png') }}" alt="Planet Icon">
                     </div>
                     <h3>Lorem ipsum dolor sit amet, consectetur</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
@@ -47,7 +53,7 @@
 
                 <div class="card">
                     <div class="card-icon">
-                        <img src="images/blue dimond.png" alt="Gem Icon">
+                        <img src="{{ asset('assets/images/blue dimond.png') }}" alt="Gem Icon">
                     </div>
                     <h3>Lorem ipsum dolor sit amet, consectetur</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
@@ -65,7 +71,7 @@
 
                 <div class="card">
                     <div class="card-icon">
-                        <img src="images/2nd moon.png" alt="Zodiac Icon">
+                        <img src="{{ asset('assets/images/2nd moon.png') }}" alt="Zodiac Icon">
                     </div>
                     <h3>Lorem ipsum dolor sit amet, consectetur</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
@@ -98,7 +104,7 @@
                     <div class="astro-card">
 
                         <div class="astro-image">
-                            <img src="images/top 1 astrologer.png" alt="Acharyaa Parul Verma">
+                            <img src="{{ asset('assets/images/top 1 astrologer.png') }}" alt="Acharyaa Parul Verma">
                         </div>
                         <div class="astro-info">
                             <h3>Acharyaa Parul Verma</h3>
@@ -182,7 +188,7 @@
             <div class="item">
                 <div class="gem-card" data-aos="fade-up">
                     <div class="gem-img-box">
-                        <img src="images/product_4.png" alt="Yellow Sapphire">
+                        <img src="{{ asset('assets/images/product_4.png') }}" alt="Yellow Sapphire">
                     </div>
                     <h3>Yellow Sapphire</h3>
                     <p class="gem-desc">Divine Luck, Prosperity, Blissful Matrimony</p>
@@ -198,7 +204,7 @@
                 <div class="gem-card">
                     <div class="badge-off">20% Off</div>
                     <div class="gem-img-box">
-                        <img src="images/product_1.png" alt="Blue Sapphire">
+                        <img src="{{ asset('assets/images/product_1.png') }}" alt="Blue Sapphire">
                     </div>
                     <h3>Blue Sapphire</h3>
                     <p class="gem-desc">Great Fame, Discipline, Removes Misfortunes</p>
@@ -216,7 +222,7 @@
             <div class="item">
                 <div class="gem-card">
                     <div class="gem-img-box">
-                        <img src="images/product_2.png" alt="Emerald">
+                        <img src="{{ asset('assets/images/product_2.png') }}" alt="Emerald">
                     </div>
                     <h3>Emerald</h3>
                     <p class="gem-desc">Vocal Charm, Creativity, Success in Business</p>
@@ -231,7 +237,7 @@
             <div class="item">
                 <div class="gem-card">
                     <div class="gem-img-box">
-                        <img src="images/product_3.png" alt="Ruby">
+                        <img src="{{ asset('assets/images/product_3.png') }}" alt="Ruby">
                     </div>
                     <h3>Ruby</h3>
                     <p class="gem-desc">Great Health, Will Power, Fame & Reputation</p>
@@ -366,7 +372,7 @@
 
             <div class="course-card" data-aos="fade-right">
                 <div class="course-thumb">
-                    <img src="images/courses-post.png" alt="Vedic Astrology Course">
+                    <img src="{{ asset('assets/images/courses-post.png') }}" alt="Vedic Astrology Course">
                 </div>
                 <div class="course-body">
                     <div class="stars text-yellow">
@@ -387,7 +393,7 @@
 
             <div class="course-card" data-aos="fade-up">
                 <div class="course-thumb">
-                    <img src="images/courses-post.png" alt="Vedic Astrology Course">
+                    <img src="{{ asset('assets/images/courses-post.png') }}" alt="Vedic Astrology Course">
                 </div>
                 <div class="course-body">
                     <div class="stars text-yellow">
@@ -745,7 +751,7 @@
 
 <section class="donation-section">
     <div class="container">
-        <div class="donation-banner" style="background-image: url('images/donate-now-banner.png');">
+            <div class="donation-banner" style="background-image: url('{{ asset('assets/images/donate-now-banner.png') }}');">
             <div class="donation-overlay"></div>
 
             <div class="donation-content">
@@ -769,7 +775,7 @@
            <a href="about.php" class="btn btn-primary header-btn">Read More</a>
         </div>
         <div class="about-image">
-            <img src="images/about us circle.png" alt="Zodiac Wheel" class="rotating-wheel">
+            <img src="{{ asset('assets/images/about us circle.png') }}" alt="Zodiac Wheel" class="rotating-wheel">
         </div>
     </div>
 </section>
@@ -784,13 +790,13 @@
 
         <div class="video-grid">
             <div class="video-card">
-                <img src="images/video1.png" alt="Celestial Video 1">
+                <img src="{{ asset('assets/images/video1.png') }}" alt="Celestial Video 1">
             </div>
             <div class="video-card">
-                <img src="images/video2.png" alt="Celestial Video 2">
+                <img src="{{ asset('assets/images/video2.png') }}" alt="Celestial Video 2">
             </div>
             <div class="video-card">
-                <img src="images/video3.png" alt="Celestial Video 3">
+                <img src="{{ asset('assets/images/video3.png') }}" alt="Celestial Video 3">
             </div>
         </div>
     </div>
@@ -798,7 +804,7 @@
 
 <section class="subscribe-section">
     <div class="container">
-        <div class="subscribe-box" style="background-image: url('images/subscribe\ banner.png');">
+        <div class="subscribe-box" style="background-image: url('{{ asset('assets/images/subscribe banner.png') }}');">
             <div class="subscribe-content">
                 <h3>Subscribe for exclusive offers and updates!</h3>
                 <form class="subscribe-form">
