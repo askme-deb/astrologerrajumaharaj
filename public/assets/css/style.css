@@ -32889,3 +32889,57 @@ aside.course-card {
 .mini-cart.active {
   display: block;
 }
+
+
+
+
+
+/* ---------------------responsive css-------------------------------- */
+
+@media (min-width: 1px) and (max-width: 768px) {
+
+.navbar-brand img {height: 65px;}
+.banner {height: 30vh;}
+.banner-content {padding: 20px;}
+.banner-content p {font-size: 12px;}
+.banner-content h1 {font-size: 20px;}
+.owl-stage-outer{margin-top: 0; padding-top: 0;}
+.sale-banner-placeholder {height: 170px;}
+.sale-banner-placeholder h2{font-size: 16px;}
+.drew:after {width: 350px;height: 340px; top: 170px;left: 0; display: none;}
+.drew2:after {width: 350px;height: 340px; top: 70px;right: 0; display: none;}
+.stat-item {width: 100%;}
+.kundali-banner { min-height: 100px;}
+.section-header-center h2 {font-size: 20px;}
+.horoscope-tabs{display:block !important;}
+.drew3:after {top: 13px; left: 63px; width: 250px; height: 250px; display: none;}
+.about-image img {width: 70%;}
+.about-text h2 {font-size: 20px;}
+.donation-section {padding: 0px; margin-top: 20px;}
+.donation-content h2 {font-size: 20px;}
+.donation-content p {font-size: 12px;}
+.about-me-section {padding-bottom: 0px;}
+.subscribe-content h3 {font-size: 20px;}
+.social-links {display: block;}
+.footer-col ul li {margin-bottom: 0;}
+.page-hero { min-height: 200px;padding: 40px 0 20px;background-position: right;}
+.page-hero h1 {font-size: 24px; margin-bottom: 0px;}
+.about-content p {text-align: justify;font-size: 14px;}
+.about-text p {text-align: justify;font-size: 14px;}
+.course-hero-grid {display: block;}
+.content-block h2 {margin-bottom: 0;}
+.content-block {background: #fff; padding: 20px;}
+.category-slider-section {padding: 20px 0;}
+.section-title {margin-bottom: 10px;font-size: 16px;}
+.product-meta { margin-bottom: 0;}
+.gem-desc {margin-bottom: 3px;}
+.section-title h2 {font-size: 20px;}
+.trending-gems {padding: 70px 0 0;}
+.ecom-benefits {padding: 0px 0;}
+.container.product-grid {max-width: 100% !important;display: block;}
+.product-info {max-width: 100%;}
+.tabs {display: block;}
+.blog-hero h1 {font-size: 20px;padding-top: 20px;}
+
+
+}
