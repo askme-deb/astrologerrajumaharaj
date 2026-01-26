@@ -471,7 +471,7 @@ nav a.active {
 
 /* --- ASTROLOGERS SECTION --- */
 .astrologers-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
@@ -3989,7 +3989,7 @@ nav a.active {
 
 /* --- ASTROLOGERS SECTION --- */
 .astrologers-grid {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
@@ -26444,7 +26444,7 @@ nav a.active {
 
 /* --- ASTROLOGERS SECTION --- */
 .astrologers-grid {
-  display: flex;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
 }
@@ -32890,6 +32890,11 @@ aside.course-card {
   display: block;
 }
 
+.info-cards-section .card {min-height: 484px;}
+
+div#astrologersGrid {display: flex;gap: 20px;}
+.skills span.skill-badge {width: 74%;text-align: center;}
+
 
 
 
@@ -32940,17 +32945,18 @@ aside.course-card {
 .product-info {max-width: 100%;}
 .tabs {display: block;}
 .blog-hero h1 {font-size: 20px;padding-top: 20px;}
+.home_warp .banner-content {padding-right: 130px;}
+.home_warp .banner-content h1 {font-size: 16px;}
+.home_warp .banner-content p {font-size: 10px;}
+.astrologers-grid {display: block;}
+div#astrologersGrid {display: block;}
+div#astrologersGrid .astro-card {margin-bottom: 10px;}
+.gem-card {padding: 30px 10px;min-height: 324px;}
+.gem-card button.buy-btn {font-size: 10px;padding: 7px;height: auto;}
+.price {font-size: 12px;}
+.course-body h3 {font-size: 14px;}
+.instructor span {font-size: 11px;}
 
 
-}
 
-
-div#astrologersGrid {
-    display: flex;
-    gap: 20px;
-}
-
-.skills span.skill-badge {
-    width: 74%;
-    text-align: center;
 }
