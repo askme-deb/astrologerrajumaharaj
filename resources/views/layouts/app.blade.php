@@ -129,16 +129,16 @@ document.querySelectorAll(".section-header-acc").forEach(header => {
         navText: ["‹", "›"],
         responsive: {
             0: {
-                items: 1
+                items: 2
             },
             576: {
                 items: 2
             },
             768: {
-                items: 3
+                items: 2
             },
             992: {
-                items: 3
+                items: 4
             }
         }
     });

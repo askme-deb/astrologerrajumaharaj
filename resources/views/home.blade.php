@@ -93,7 +93,7 @@
     <div class="container">
         <div class="section-header">
             <h2>Top Online <span class="highlight-text">Astrologers</span></h2>
-            <a href="#" class="view-all-btn">View All</a>
+            <a href="https://jyotish.astrorajumaharaj.com/consultation" target="_blank" class="view-all-btn">View All</a>
         </div>
 
         <div class="row astrologers-grid">
