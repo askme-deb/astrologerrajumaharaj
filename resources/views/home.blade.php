@@ -4,7 +4,7 @@
 
 @section('content')
 
-<section class="banner">
+<section class="banner home_warp">
     <div class="slider">
         <img src="{{ asset('assets/images/banner/banner-1.png') }}" alt="">
         <img src="{{ asset('assets/images/banner/banner-2.png') }}" alt="">
