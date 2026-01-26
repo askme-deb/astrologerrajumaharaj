@@ -96,7 +96,7 @@
             <a href="#" class="view-all-btn">View All</a>
         </div>
 
-        <div class="row g-2 astrologers-grid">
+        <div class="row astrologers-grid">
 
             <div id="astrologersLoading" style="padding: 30px 0; text-align: center;">
                 <div class="spinner-border text-primary" role="status">
