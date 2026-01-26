@@ -19,7 +19,7 @@
     <div class="banner-content">
         <h1>Your Future Begins with the Right Guidance</h1>
         <p>Talk to experienced astrologers for clarity in love, career, health, and finances—anytime, anywhere.</p>
-        <a href="#" class="btn">Talk to an Expert</a>
+        <a href="https://jyotish.astrorajumaharaj.com/consultation-booking" target="_blank" class="btn">Talk to an Expert</a>
     </div>
 </section>
 
@@ -37,14 +37,14 @@
                     <div class="card-icon">
                         <img src="{{ asset('assets/images/1st moon.png') }}" alt="Planet Icon">
                     </div>
-                    <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <h3>Personal Horoscope Analysis</h3>
+                        <p>Get a detailed reading of your birth chart to understand your strengths, challenges, and life path. Discover how planetary positions influence your personality and destiny.</p>
                     <div class="card-footer">
                         <div class="schedule">
                             <span>M T W T F S S</span>
-                            <small>Lorem ipsum dolor sit amet</small>
+                                <small>Available: Mon-Sun, 9am-9pm</small>
                         </div>
-                        <a href="#" class="card-btn">Learn more</a>
+                            <a href="{{ url('/consultation') }}" class="card-btn">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -55,14 +55,14 @@
                     <div class="card-icon">
                         <img src="{{ asset('assets/images/blue dimond.png') }}" alt="Gem Icon">
                     </div>
-                    <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <h3>Gemstone Recommendations</h3>
+                        <p>Find the perfect gemstone to enhance your luck, health, and prosperity. Receive expert advice on which stones suit your astrological profile and how to wear them for maximum benefit.</p>
                     <div class="card-footer">
                         <div class="schedule">
                             <span>M T W T F S S</span>
-                            <small>Lorem ipsum dolor sit amet</small>
+                                <small>Consultation: Daily, 10am-8pm</small>
                         </div>
-                        <a href="#" class="card-btn">Learn more</a>
+                            <a href="{{ url('/gemstones') }}" class="card-btn">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -73,14 +73,14 @@
                     <div class="card-icon">
                         <img src="{{ asset('assets/images/2nd moon.png') }}" alt="Zodiac Icon">
                     </div>
-                    <h3>Lorem ipsum dolor sit amet, consectetur</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        <h3>Daily & Yearly Predictions</h3>
+                        <p>Stay ahead with accurate daily, weekly, and yearly horoscopes. Get insights on love, career, health, and finances tailored to your zodiac sign.</p>
                     <div class="card-footer">
                         <div class="schedule">
                             <span>M T W T F S S</span>
-                            <small>Lorem ipsum dolor sit amet</small>
+                                <small>Updated: Every Morning</small>
                         </div>
-                        <a href="#" class="card-btn">Learn more</a>
+                            <a href="{{ url('/horoscope') }}" class="card-btn">Learn more</a>
                     </div>
 
                 </div>
