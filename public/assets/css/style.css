@@ -32943,3 +32943,14 @@ aside.course-card {
 
 
 }
+
+
+div#astrologersGrid {
+    display: flex;
+    gap: 20px;
+}
+
+.skills span.skill-badge {
+    width: 74%;
+    text-align: center;
+}

@@ -44,7 +44,71 @@ class HoroscopeController extends Controller
     //     }
     //     return response()->json($data);
     // }
-    public function get(Request $request, $sign)
+    // public function get(Request $request, $sign)
+    // {
+    //     $sign = strtolower($sign);
+
+    //     $validSigns = [
+    //         'aries',
+    //         'taurus',
+    //         'gemini',
+    //         'cancer',
+    //         'leo',
+    //         'virgo',
+    //         'libra',
+    //         'scorpio',
+    //         'sagittarius',
+    //         'capricorn',
+    //         'aquarius',
+    //         'pisces'
+    //     ];
+
+    //     if (!in_array($sign, $validSigns)) {
+    //         return response()->json(['error' => 'Invalid zodiac sign.'], 400);
+    //     }
+
+    //     $cacheKey = "horoscope_{$sign}_daily";
+
+    //     $data = Cache::remember($cacheKey, 1800, function () use ($sign) {
+    //         try {
+    //             $response = Http::timeout(10)
+    //                 ->acceptJson()
+    //                 ->get("https://ohmanda.com/api/horoscope/{$sign}");
+
+    //             if ($response->successful()) {
+    //                 return $response->json();
+    //             }
+
+    //             Log::error('Horoscope API HTTP error', [
+    //                 'status' => $response->status(),
+    //                 'body' => $response->body(),
+    //             ]);
+    //         } catch (\Throwable $e) {
+    //             Log::error('Horoscope API exception', [
+    //                 'message' => $e->getMessage(),
+    //             ]);
+    //         }
+
+    //         return null;
+    //     });
+
+    //     if (
+    //         !$data ||
+    //         !isset($data['horoscope']) ||
+    //         trim($data['horoscope']) === ''
+    //     ) {
+    //         return response()->json(['error' => 'Horoscope unavailable.'], 503);
+    //     }
+
+    //     return response()->json([
+    //         'sign' => $data['sign'] ?? ucfirst($sign),
+    //         'date' => $data['date'] ?? now()->toDateString(),
+    //         'horoscope' => $data['horoscope'],
+    //         'source' => 'ohmanda.com',
+    //         'cached' => true
+    //     ]);
+    // }
+public function get(Request $request, $sign)
 {
     $sign = strtolower($sign);
 
@@ -62,20 +126,23 @@ class HoroscopeController extends Controller
     $data = Cache::remember($cacheKey, 1800, function () use ($sign) {
         try {
             $response = Http::timeout(10)
-                ->acceptJson()
-                ->get("https://ohmanda.com/api/horoscope/{$sign}");
+                ->asForm()
+                ->post('https://aztro.sameerkumar.website/', [
+                    'sign' => $sign,
+                    'day'  => 'today',
+                ]);
 
             if ($response->successful()) {
                 return $response->json();
             }
 
-            Log::error('Horoscope API HTTP error', [
+            Log::error('Aztro API error', [
                 'status' => $response->status(),
-                'body' => $response->body(),
+                'body'   => $response->body(),
             ]);
 
         } catch (\Throwable $e) {
-            Log::error('Horoscope API exception', [
+            Log::error('Aztro API exception', [
                 'message' => $e->getMessage(),
             ]);
         }
@@ -83,20 +150,19 @@ class HoroscopeController extends Controller
         return null;
     });
 
-    if (
-        !$data ||
-        !isset($data['horoscope']) ||
-        trim($data['horoscope']) === ''
-    ) {
+    if (!$data || empty($data['description'])) {
         return response()->json(['error' => 'Horoscope unavailable.'], 503);
     }
 
     return response()->json([
-        'sign' => $data['sign'] ?? ucfirst($sign),
-        'date' => $data['date'] ?? now()->toDateString(),
-        'horoscope' => $data['horoscope'],
-        'source' => 'ohmanda.com',
-        'cached' => true
+        'sign'          => ucfirst($sign),
+        'date'          => $data['current_date'] ?? now()->toDateString(),
+        'horoscope'     => $data['description'],
+        'mood'          => $data['mood'] ?? null,
+        'lucky_number'  => $data['lucky_number'] ?? null,
+        'lucky_time'    => $data['lucky_time'] ?? null,
+        'source'        => 'aztro',
+        'cached'        => true,
     ]);
 }
 }
