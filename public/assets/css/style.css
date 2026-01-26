@@ -29597,10 +29597,10 @@ nav a.active {
 }
 
 .zodiac-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 16px;
-  margin-bottom: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(177px, 1fr));
+    gap: 10px;
+    margin-bottom: 25px;
 }
 
 .zodiac-item {
