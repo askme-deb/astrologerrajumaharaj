@@ -37,14 +37,14 @@
                     <div class="card-icon">
                         <img src="{{ asset('assets/images/1st moon.png') }}" alt="Planet Icon">
                     </div>
-                        <h3>Personal Horoscope Analysis</h3>
-                        <p>Get a detailed reading of your birth chart to understand your strengths, challenges, and life path. Discover how planetary positions influence your personality and destiny.</p>
+                    <h3>Personal Horoscope Analysis</h3>
+                    <p>Get a detailed reading of your birth chart to understand your strengths, challenges, and life path. Discover how planetary positions influence your personality and destiny.</p>
                     <div class="card-footer">
                         <div class="schedule">
                             <span>M T W T F S S</span>
-                                <small>Available: Mon-Sun, 9am-9pm</small>
+                            <small>Available: Mon-Sun, 9am-9pm</small>
                         </div>
-                            <a href="{{ url('/consultation') }}" class="card-btn">Learn more</a>
+                        <a href="{{ url('/consultation') }}" class="card-btn">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -55,14 +55,14 @@
                     <div class="card-icon">
                         <img src="{{ asset('assets/images/blue dimond.png') }}" alt="Gem Icon">
                     </div>
-                        <h3>Gemstone Recommendations</h3>
-                        <p>Find the perfect gemstone to enhance your luck, health, and prosperity. Receive expert advice on which stones suit your astrological profile and how to wear them for maximum benefit.</p>
+                    <h3>Gemstone Recommendations</h3>
+                    <p>Find the perfect gemstone to enhance your luck, health, and prosperity. Receive expert advice on which stones suit your astrological profile and how to wear them for maximum benefit.</p>
                     <div class="card-footer">
                         <div class="schedule">
                             <span>M T W T F S S</span>
-                                <small>Consultation: Daily, 10am-8pm</small>
+                            <small>Consultation: Daily, 10am-8pm</small>
                         </div>
-                            <a href="{{ url('/gemstones') }}" class="card-btn">Learn more</a>
+                        <a href="{{ url('/gemstones') }}" class="card-btn">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -73,14 +73,14 @@
                     <div class="card-icon">
                         <img src="{{ asset('assets/images/2nd moon.png') }}" alt="Zodiac Icon">
                     </div>
-                        <h3>Daily & Yearly Predictions</h3>
-                        <p>Stay ahead with accurate daily, weekly, and yearly horoscopes. Get insights on love, career, health, and finances tailored to your zodiac sign.</p>
+                    <h3>Daily & Yearly Predictions</h3>
+                    <p>Stay ahead with accurate daily, weekly, and yearly horoscopes. Get insights on love, career, health, and finances tailored to your zodiac sign.</p>
                     <div class="card-footer">
                         <div class="schedule">
                             <span>M T W T F S S</span>
-                                <small>Updated: Every Morning</small>
+                            <small>Updated: Every Morning</small>
                         </div>
-                            <a href="{{ url('/horoscope') }}" class="card-btn">Learn more</a>
+                        <a href="{{ url('/horoscope') }}" class="card-btn">Learn more</a>
                     </div>
 
                 </div>
@@ -98,76 +98,21 @@
 
         <div class="row g-2 astrologers-grid">
 
-
-            <div class="owl-carousel owl-theme">
-                <div class="banner-item">
-                    <div class="astro-card">
-
-                        <div class="astro-image">
-                            <img src="{{ asset('assets/images/top 1 astrologer.png') }}" alt="Acharyaa Parul Verma">
-                        </div>
-                        <div class="astro-info">
-                            <h3>Acharyaa Parul Verma</h3>
-                            <p class="skills">Vedic, Vastu</p>
-                            <p class="language">Hindi, Bengali</p>
-                            <div class="astro-actions">
-                                <button class="btn-call"><i class="fas fa-phone-alt"></i> Call</button>
-                                <button class="btn-chat"><i class="fas fa-comment-dots"></i> Chat</button>
-                            </div>
-                            <div class="rating">
-                                <i class="fas fa-star"></i> 4.3 | 2228 orders
-                            </div>
-                        </div>
-                    </div>
+            <div id="astrologersLoading" style="padding: 30px 0; text-align: center;">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
                 </div>
-
-                <!-- <div class="banner-item">
-   <div class="astro-card">
-                    <div class="astro-image">
-                        <img src="images/top 1 astrologer.png" alt="Acharyaa Parul Verma">
-                    </div>
-                    <div class="astro-info">
-                        <h3>Acharyaa Parul Verma</h3>
-                        <p class="skills">Vedic, Vastu</p>
-                        <p class="language">Hindi, Bengali</p>
-                        <div class="astro-actions">
-                            <button class="btn-call"><i class="fas fa-phone-alt"></i> Call</button>
-                            <button class="btn-chat"><i class="fas fa-comment-dots"></i> Chat</button>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i> 4.3 | 2228 orders
-                        </div>
-                    </div>
-                </div>
-  </div>
-
-  <div class="banner-item">
-     <div class="astro-card">
-                    <div class="astro-image">
-                        <img src="images/top 1 astrologer.png" alt="Acharyaa Parul Verma">
-                    </div>
-                    <div class="astro-info">
-                        <h3>Acharyaa Parul Verma</h3>
-                        <p class="skills">Vedic, Vastu</p>
-                        <p class="language">Hindi, Bengali</p>
-                        <div class="astro-actions">
-                            <button class="btn-call"><i class="fas fa-phone-alt"></i> Call</button>
-                            <button class="btn-chat"><i class="fas fa-comment-dots"></i> Chat</button>
-                        </div>
-                        <div class="rating">
-                            <i class="fas fa-star"></i> 4.3 | 2228 orders
-                        </div>
-                    </div>
-                </div>
-  </div> -->
             </div>
-
-
-
-
-
-
-
+            <div id="astrologersError" class="alert alert-danger" style="display:none;"></div>
+            <div id="astrologersGrid" class="owl-carousel owl-theme"></div>
+            <style>
+                #astrologersGrid.grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+                    gap: 24px;
+                }
+            </style>
+            <div id="astrologersGrid" class="grid"></div>
         </div>
     </div>
 </section>
@@ -250,10 +195,6 @@
             </div>
 
         </div>
-
-
-
-
 </section>
 
 <section class="sale-banner-wrapper">
@@ -275,99 +216,6 @@
                 <p class="sub-heading">We Invite you</p>
             </div>
         </div>
-
-
-        <!-- 
-            <div class="courses-grid">
-               <div class="course-card" data-aos="fade-right">
-                    <div class="course-thumb">
-                        <img src="images/courses post.png" alt="Vedic Astrology Course">
-                    </div>
-                    <div class="course-body">
-                        <div class="stars text-yellow">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <h3>Learn Vedic Astrology</h3>
-                        <div class="instructor">
-                            <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
-                            <span>Astro Tungeesh</span>
-                        </div>
-                        <div class="course-footer">
-                            <button class="enroll-btn">Enroll Course</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-card" data-aos="fade-up">
-                    <div class="course-thumb">
-                        <img src="images/courses post.png" alt="Vedic Astrology Course">
-                    </div>
-                    <div class="course-body">
-                        <div class="stars text-yellow">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <h3>Learn Vedic Astrology</h3>
-                        <div class="instructor">
-                            <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
-                            <span>Astro Tungeesh</span>
-                        </div>
-                        <div class="course-footer">
-                            <div class="course-price">
-                                <span>Rs. 1000/-</span>
-                                <small>Inclusive of 18% GST</small>
-                            </div>
-                            <button class="icon-btn-outline"><i class="fas fa-shopping-bag"></i></button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="course-card" data-aos="fade-left">
-                    <div class="course-thumb">
-                        <img src="images/courses post.png" alt="Vedic Astrology Course">
-                    </div>
-                    <div class="course-body">
-                        <div class="stars text-yellow">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <h3>Learn Vedic Astrology</h3>
-                        <div class="instructor">
-                            <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
-                            <span>Astro Tungeesh</span>
-                        </div>
-                        <div class="course-footer">
-                             <div class="course-price">
-                                <span>Rs. 1000/-</span>
-                                <small>Inclusive of 18% GST</small>
-                            </div>
-                            <button class="icon-btn-outline"><i class="fas fa-shopping-bag"></i></button>
-                        </div>
-                    </div>
-                </div>
-                
-                 <div class="course-card">
-                    <div class="course-thumb">
-                        <img src="images/courses post.png" alt="Vedic Astrology Course">
-                    </div>
-                    <div class="course-body">
-                        <div class="stars text-yellow">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <h3>Learn Vedic Astrology</h3>
-                        <div class="instructor">
-                            <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
-                            <span>Astro Tungeesh</span>
-                        </div>
-                        <div class="course-footer">
-                             <div class="course-price">
-                                <span>Rs. 1000/-</span>
-                                <small>Inclusive of 18% GST</small>
-                            </div>
-                            <button class="icon-btn-outline"><i class="fas fa-shopping-bag"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-
         <div class="owl-carousel owl-theme courses-carousel huwe">
 
             <div class="course-card" data-aos="fade-right">
@@ -502,256 +350,104 @@
 
 
 
-        <div class="horoscope-section">
+        <section class="section-padding horoscope-section">
+            <div class="container">
+                <div class="section-header-center">
+                    <h2>Horoscope Predictions</h2>
+                    <p>Daily, Weekly, Monthly & Yearly Horoscope based on your Zodiac sign</p>
+                </div>
 
-            <!-- Tabs -->
-            <div class="horoscope-tabs">
-                <button class="tab-btn active" data-tab="daily">Daily</button>
-                <button class="tab-btn" data-tab="weekly">Weekly</button>
-                <button class="tab-btn" data-tab="monthly">Monthly</button>
-                <button class="tab-btn" data-tab="yearly">Yearly</button>
-            </div>
+                <!-- Tabs -->
+                <div class="horoscope-tabs text-center mb-4">
+                    <button class="tab-btn active" data-period="daily">Daily</button>
+                    <button class="tab-btn" data-period="weekly">Weekly</button>
+                    <button class="tab-btn" data-period="monthly">Monthly</button>
+                    <button class="tab-btn" data-period="yearly">Yearly</button>
+                </div>
 
-            <!-- Zodiac Grid -->
-            <div class="zodiac-grid">
-                <!-- <div class="zodiac-item active"><img src="images/hs1.png"><span>Aries</span></div>
-            <div class="zodiac-item"><img src="images/hs2.png"><span>Taurus</span></div>
-            <div class="zodiac-item"><img src="images/hs3.png"><span>Gemini</span></div>
-            <div class="zodiac-item"><img src="images/hs4.png"><span>Cancer</span></div>
-            <div class="zodiac-item"><img src="images/hs5.png"><span>Leo</span></div>
-            <div class="zodiac-item"><img src="images/hs6.png"><span>Virgo</span></div>
-            <div class="zodiac-item"><img src="images/hs7.png"><span>Libra</span></div>
-            <div class="zodiac-item"><img src="images/hs1.png"><span>Scorpio</span></div>
-            <div class="zodiac-item"><img src="images/hs1.png"><span>Sagittarius</span></div>
-            <div class="zodiac-item"><img src="images/hs1.png"><span>Capricorn</span></div>
-            <div class="zodiac-item"><img src="images/hs1.png"><span>Aquarius</span></div>
-            <div class="zodiac-item"><img src="images/hs1.png"><span>Pisces</span></div> -->
+                <!-- Zodiac Grid -->
+                <div class="row g-4 zodiac-grid">
+                    @php
+                    $zodiacs = [
+                    ['name'=>'Aries','sign'=>'aries','date'=>'Mar 21 – Apr 19','icon'=>'download-1.svg'],
+                    ['name'=>'Taurus','sign'=>'taurus','date'=>'Apr 20 – May 20','icon'=>'taurus.svg'],
+                    ['name'=>'Gemini','sign'=>'gemini','date'=>'May 21 – Jun 20','icon'=>'Gemini1.svg'],
+                    ['name'=>'Cancer','sign'=>'cancer','date'=>'Jun 21 – Jul 22','icon'=>'cancer.svg'],
+                    ['name'=>'Leo','sign'=>'leo','date'=>'Jul 23 – Aug 22','icon'=>'leo.svg'],
+                    ['name'=>'Virgo','sign'=>'virgo','date'=>'Aug 23 – Sep 22','icon'=>'virgo.svg'],
+                    ['name'=>'Libra','sign'=>'libra','date'=>'Sep 23 – Oct 22','icon'=>'libra.svg'],
+                    ['name'=>'Scorpio','sign'=>'scorpio','date'=>'Oct 23 – Nov 21','icon'=>'scorpio.svg'],
+                    ['name'=>'Sagittarius','sign'=>'sagittarius','date'=>'Nov 22 – Dec 21','icon'=>'sagittarius.svg'],
+                    ['name'=>'Capricorn','sign'=>'capricorn','date'=>'Dec 22 – Jan 19','icon'=>'capricorn.svg'],
+                    ['name'=>'Aquarius','sign'=>'aquarius','date'=>'Jan 20 – Feb 18','icon'=>'aquarius.svg'],
+                    ['name'=>'Pisces','sign'=>'pisces','date'=>'Feb 19 – Mar 20','icon'=>'pisces.svg'],
+                    ];
+                    @endphp
 
-                <div class="container">
-                    <div class="row g-4">
+                    @foreach($zodiacs as $zodiac)
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <a href="javascript:void(0)"
+                            class="zodiac-card"
+                            data-sign="{{ $zodiac['sign'] }}">
+                            <div class="zodiac-icon">
+                                <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/{{ $zodiac['icon'] }}"
+                                    alt="{{ $zodiac['name'] }}">
+                            </div>
+                            <h5>{{ $zodiac['name'] }}</h5>
+                            <p>{{ $zodiac['date'] }}</p>
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
 
-                        <!-- Zodiac Card -->
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/download-1.svg"
-                                        alt="Aries">
-                                </div>
-                                <h5>Aries</h5>
-                                <p>Mar 21 – Apr 19</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/taurus.svg"
-                                        alt="Taurus">
-                                </div>
-                                <h5>Taurus</h5>
-                                <p>Apr 20 – May 20</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/12/Gemini1.svg"
-                                        alt="Gemini">
-                                </div>
-                                <h5>Gemini</h5>
-                                <p>May 21 – Jun 20</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/cancer.svg"
-                                        alt="Cancer">
-                                </div>
-                                <h5>Cancer</h5>
-                                <p>Jun 21 – Jul 22</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/leo.svg"
-                                        alt="Leo">
-                                </div>
-                                <h5>Leo</h5>
-                                <p>Jul 23 – Aug 22</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                        alt="Virgo">
-                                </div>
-                                <h5>Virgo</h5>
-                                <p>Aug 23 – Sep 22</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                        alt="Virgo">
-                                </div>
-                                <h5>Libra</h5>
-                                <p>Aug 23 – Sep 22</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                        alt="Virgo">
-                                </div>
-                                <h5>Scorpio</h5>
-                                <p>Aug 23 – Sep 22</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                        alt="Virgo">
-                                </div>
-                                <h5>Sagittarius</h5>
-                                <p>Aug 23 – Sep 22</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                        alt="Virgo">
-                                </div>
-                                <h5>Capricorn</h5>
-                                <p>Aug 23 – Sep 22</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                        alt="Virgo">
-                                </div>
-                                <h5>Aquarius</h5>
-                                <p>Aug 23 – Sep 22</p>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-2 col-md-4 col-6">
-                            <a href="#" class="zodiac-card">
-                                <div class="zodiac-icon">
-                                    <img src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                        alt="Virgo">
-                                </div>
-                                <h5>Pisces</h5>
-                                <p>Aug 23 – Sep 22</p>
-                            </a>
-                        </div>
-
+                <!-- Horoscope Output -->
+                <div class="horoscope-content mt-4">
+                    <div id="horoscopeResult" class="alert alert-info text-center">
+                        Select a zodiac sign to see horoscope.
                     </div>
                 </div>
             </div>
-
-            <!-- Horoscope Content -->
-            <div class="horoscope-content">
-                <div class="tab-content active" id="daily">Your daily horoscope will appear here.</div>
-                <div class="tab-content" id="weekly">Your weekly horoscope will appear here.</div>
-                <div class="tab-content" id="monthly">Your monthly horoscope will appear here.</div>
-                <div class="tab-content" id="yearly">Your yearly horoscope will appear here.</div>
-            </div>
-
-        </div>
-
-
-
+        </section>
 
 
         <div class="prediction-box">
-            <div class="prediction-date">December 11, 2025</div>
-
-
+            <div class="prediction-date" id="predictionDate">Today</div>
             <div class="prediction-section">
-
                 <!-- Date Navigation -->
-                <div class="date-nav">
-                    <span data-day="yesterday">Yesterday</span>
-                    <span class="active" data-day="today">Today</span>
-                    <span data-day="tomorrow">Tomorrow</span>
+                <div class="date-nav" id="predictionDateNav">
+                    <span data-day="yesterday" id="predDayYesterday">Yesterday</span>
+                    <span class="active" data-day="today" id="predDayToday">Today</span>
+                    <span data-day="tomorrow" id="predDayTomorrow">Tomorrow</span>
                 </div>
-
                 <!-- Vertical Tabs Wrapper -->
                 <div class="prediction-content-wrapper">
-
                     <!-- Vertical Tabs -->
-                    <ul class="prediction-categories">
-                        <li class="active" data-tab="personal">Personal</li>
-                        <li data-tab="health">Health</li>
-                        <li data-tab="profession">Profession</li>
-                        <li data-tab="emotions">Emotions</li>
-                        <li data-tab="travel">Travel</li>
-                        <li data-tab="luck">Luck</li>
+                    <ul class="prediction-categories" id="predictionCategories">
+                        <li class="active" data-tab="personal" id="predCatPersonal">Personal</li>
+                        <li data-tab="health" id="predCatHealth">Health</li>
+                        <li data-tab="profession" id="predCatProfession">Profession</li>
+                        <li data-tab="emotions" id="predCatEmotions">Emotions</li>
+                        <li data-tab="travel" id="predCatTravel">Travel</li>
+                        <li data-tab="luck" id="predCatLuck">Luck</li>
                     </ul>
-
                     <!-- Content Area -->
                     <div class="prediction-text">
-
-                        <div class="tab-content active" id="personal">
-                            <p>This day promises a mix of excitement and stability. Engage with loved ones and explore
-                                activities that bring joy and growth.</p>
-                        </div>
-
-                        <div class="tab-content" id="health">
-                            <p>Your health remains steady. Focus on hydration, balanced meals, and short breaks to
-                                recharge your energy.</p>
-                        </div>
-
-                        <div class="tab-content" id="profession">
-                            <p>Professional matters favor clear communication. Strategic planning will help you overcome
-                                minor challenges.</p>
-                        </div>
-
-                        <div class="tab-content" id="emotions">
-                            <p>Emotional clarity improves today. Express feelings calmly and avoid impulsive reactions.
-                            </p>
-                        </div>
-
-                        <div class="tab-content" id="travel">
-                            <p>Short-distance travel is favorable. Plan ahead to avoid last-minute stress.</p>
-                        </div>
-
-                        <div class="tab-content" id="luck">
-                            <p>Luck supports thoughtful decisions. Trust your intuition while staying grounded.</p>
-                        </div>
-
+                        <div class="tab-content active" id="personal"><p>Loading prediction...</p></div>
+                        <div class="tab-content" id="health"><p></p></div>
+                        <div class="tab-content" id="profession"><p></p></div>
+                        <div class="tab-content" id="emotions"><p></p></div>
+                        <div class="tab-content" id="travel"><p></p></div>
+                        <div class="tab-content" id="luck"><p></p></div>
                     </div>
                 </div>
             </div>
-
-
-
-
         </div>
     </div>
 </section>
 
 <section class="donation-section">
     <div class="container">
-            <div class="donation-banner" style="background-image: url('{{ asset('assets/images/donate-now-banner.png') }}');">
+        <div class="donation-banner" style="background-image: url('{{ asset('assets/images/donate-now-banner.png') }}');">
             <div class="donation-overlay"></div>
 
             <div class="donation-content">
@@ -770,9 +466,9 @@
     <div class="container about-container">
         <div class="about-text">
             <h2>About Me – Your Trusted Astrologer</h2>
-           <p>Astrologer <b>Raju Maharaj</b> is a highly respected and experienced Vedic astrologer, known for his deep knowledge of astrology, horoscope analysis, and spiritual guidance. With years of dedicated practice, he has helped thousands of individuals find clarity, balance, and direction in their lives.</p>
+            <p>Astrologer <b>Raju Maharaj</b> is a highly respected and experienced Vedic astrologer, known for his deep knowledge of astrology, horoscope analysis, and spiritual guidance. With years of dedicated practice, he has helped thousands of individuals find clarity, balance, and direction in their lives.</p>
             <p>Raju Maharaj specializes in <b>Vedic Astrology, Kundli Matching, Marriage & Relationship Guidance, Career and Business Astrology, Health Predictions, and Gemstone Consultation</b>.</p>
-           <a href="about.php" class="btn btn-primary header-btn">Read More</a>
+            <a href="about.php" class="btn btn-primary header-btn">Read More</a>
         </div>
         <div class="about-image">
             <img src="{{ asset('assets/images/about us circle.png') }}" alt="Zodiac Wheel" class="rotating-wheel">
@@ -816,3 +512,297 @@
     </div>
 </section>
 @endsection
+
+@push('scripts')
+<script>
+    (function() {
+        const endpoint = @json($astrologersEndpoint);
+        console.log('Astrologers API endpoint:', endpoint);
+        const loadingEl = document.getElementById('astrologersLoading');
+        const errorEl = document.getElementById('astrologersError');
+        const gridEl = document.getElementById('astrologersGrid');
+
+        const escapeHtml = (value) => {
+            const text = String(value ?? '');
+            return text
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+        };
+
+        const renderCard = (a) => {
+            const name = escapeHtml(a.name);
+            let skills = '';
+            if (Array.isArray(a.skills)) {
+                if (typeof a.skills[0] === 'object' && a.skills[0] !== null && 'name' in a.skills[0]) {
+                    skills = a.skills.map(s => escapeHtml(s.name)).join(', ');
+                } else {
+                    skills = a.skills.map(escapeHtml).join(', ');
+                }
+            } else {
+                skills = escapeHtml(a.skills);
+            }
+            const languages = Array.isArray(a.languages) ? a.languages.map(escapeHtml).join(', ') : escapeHtml(a.languages);
+            const exp = Number(a.experience ?? 0);
+            const rating = Number(a.rating ?? 0).toFixed(1);
+            const consults = Number(a.consultations ?? 0);
+            const imageUrl = escapeHtml(a.image_url);
+
+            return `
+                <div class="astro-card">
+                    <div class="astro-image">
+                        <img src="${imageUrl}" alt="${name}">
+                    </div>
+                    <div class="astro-info">
+                        <h3>${name}</h3>
+                        <div class="skills">
+                            ${skills.split(', ').map(skill => `<span class="skill-badge">${skill}</span>`).join(' ')}
+                        </div>
+                        <style>
+                            .skill-badge {
+                                display: inline-block;
+                                background: #e3e7ff;
+                                color: #2a2e4a;
+                                font-size: 13px;
+                                padding: 4px 10px;
+                                border-radius: 12px;
+                                margin: 2px 4px 2px 0;
+                                font-weight: 500;
+                                letter-spacing: 0.02em;
+                            }
+                        </style>
+                        <p class="language">${languages}</p>
+                        <p class="experience"><i class="fas fa-briefcase"></i> ${exp} Years Experience</p>
+                        <div class="astro-actions">
+                                <a href="https://jyotish.astrorajumaharaj.com/consultation-booking?astrologer=${encodeURIComponent(name)}" class="btn btn-success btn-appointment">
+                                    <i class="fas fa-calendar-check"></i> Get an Appointment
+                                </a>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> ${rating} | ${consults.toLocaleString()}+ consultations
+                        </div>
+                    </div>
+                </div>
+            `;
+        };
+
+        const showError = (message) => {
+            if (loadingEl) loadingEl.style.display = 'none';
+            if (gridEl) gridEl.innerHTML = '';
+            if (errorEl) {
+                errorEl.style.display = '';
+                errorEl.textContent = message;
+            }
+        };
+
+        const load = async () => {
+            try {
+                const res = await fetch(endpoint, {
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                if (!res.ok) throw new Error(`Request failed: ${res.status}`);
+
+
+                const payload = await res.json();
+                console.log('Astrologers API response:', payload);
+                const items = Array.isArray(payload?.data) ? payload.data : [];
+                if (!Array.isArray(payload?.data)) {
+                    showError('API response format error.');
+                    return;
+                }
+
+                if (loadingEl) loadingEl.style.display = 'none';
+                if (errorEl) errorEl.style.display = 'none';
+
+                gridEl.innerHTML = items.map(renderCard).join('');
+            } catch (e) {
+                showError('Could not load astrologers. Please try again.');
+            }
+        };
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', load);
+        } else {
+            load();
+        }
+    })();
+</script>
+
+<script>
+    (() => {
+        // Horoscope Section (unchanged)
+        let selectedSign = 'aries';
+        let selectedPeriod = 'daily';
+        const resultBox = document.getElementById('horoscopeResult');
+        const fallbackHoroscopes = {
+            aries: 'Today is a day to focus on your goals and take bold steps forward.',
+            taurus: 'Patience will bring you rewards. Stay steady and trust your instincts.',
+            gemini: 'Communication is key today. Reach out and connect with others.',
+            cancer: 'Take care of your emotional well-being. Home brings comfort.',
+            leo: 'Your confidence shines. Take the lead in group activities.',
+            virgo: 'Attention to detail will help you succeed. Stay organized.',
+            libra: 'Seek balance in your relationships. Harmony is within reach.',
+            scorpio: 'Trust your intuition. A mystery may be revealed.',
+            sagittarius: 'Adventure calls. Be open to new experiences.',
+            capricorn: 'Hard work pays off. Stay focused on your ambitions.',
+            aquarius: 'Innovation is favored. Share your unique ideas.',
+            pisces: 'Creativity flows. Express yourself through art or music.'
+        };
+        const showLoader = () => {
+            resultBox.innerHTML = '<span class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Loading horoscope...';
+        };
+        const loadHoroscope = async () => {
+            if (selectedPeriod !== 'daily') {
+                resultBox.innerHTML = 'Only daily horoscope is available for free.';
+                return;
+            }
+            showLoader();
+            try {
+                const res = await fetch(`/api/horoscope/${selectedSign}`);
+                if (!res.ok) throw new Error('API error');
+                const data = await res.json();
+                if (!data.horoscope) throw new Error('No data');
+                resultBox.innerHTML = `
+                <h5 class="mb-2 text-capitalize">${data.sign} – Daily</h5>
+                <p class="mt-3">${data.horoscope}</p>
+            `;
+            } catch (err) {
+                // Fallback static message
+                resultBox.innerHTML = `
+                <h5 class="mb-2 text-capitalize">${selectedSign} – Daily</h5>
+                <div class="alert alert-warning">Live horoscope is currently unavailable. Showing a sample prediction:</div>
+                <p class="mt-3">${fallbackHoroscopes[selectedSign] || 'Have a positive day!'}</p>
+                `;
+            }
+        };
+        document.querySelectorAll('.zodiac-card').forEach(card => {
+            card.addEventListener('click', () => {
+                document.querySelectorAll('.zodiac-card').forEach(c => {
+                    if (c && c.classList) c.classList.remove('active');
+                });
+                if (card && card.classList) card.classList.add('active');
+                selectedSign = card.dataset.sign;
+                predSign = selectedSign; // Always sync predSign
+                loadHoroscope();
+                updatePrediction();
+            });
+        });
+        document.querySelectorAll('.tab-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.tab-btn').forEach(b => {
+                    if (b && b.classList) b.classList.remove('active');
+                });
+                if (btn && btn.classList) btn.classList.add('active');
+                selectedPeriod = btn.dataset.period;
+                loadHoroscope();
+            });
+        });
+        loadHoroscope();
+
+        // Prediction Box Section (dynamic)
+        let predSign = selectedSign;
+        let predDate = 'today';
+        // Detect initial active tab for prediction category
+        let predCategory = document.querySelector('#predictionCategories li.active')?.getAttribute('data-tab') || 'personal';
+        const predDateMap = {
+            yesterday: () => {
+                const d = new Date(); d.setDate(d.getDate() - 1); return d.toLocaleDateString();
+            },
+            today: () => {
+                const d = new Date(); return d.toLocaleDateString();
+            },
+            tomorrow: () => {
+                const d = new Date(); d.setDate(d.getDate() + 1); return d.toLocaleDateString();
+            }
+        };
+        const predictionDateEl = document.getElementById('predictionDate');
+        function getActivePredictionContent() {
+            return document.querySelector('.tab-content.active p');
+        }
+        // Date nav
+        document.querySelectorAll('#predictionDateNav span').forEach(span => {
+            span.addEventListener('click', () => {
+                document.querySelectorAll('#predictionDateNav span').forEach(s => {
+                    if (s && s.classList) s.classList.remove('active');
+                });
+                if (span && span.classList) span.classList.add('active');
+                predDate = span.getAttribute('data-day');
+                updatePrediction();
+            });
+        });
+        // Category tabs
+        document.querySelectorAll('#predictionCategories li').forEach(li => {
+            li.addEventListener('click', () => {
+                document.querySelectorAll('#predictionCategories li').forEach(l => {
+                    if (l && l.classList) l.classList.remove('active');
+                });
+                if (li && li.classList) li.classList.add('active');
+                predCategory = li.getAttribute('data-tab');
+                updatePrediction();
+            });
+        });
+        // When zodiac changes, update prediction sign
+        function updatePredictionSign(newSign) {
+            predSign = newSign;
+            updatePrediction();
+        }
+        // Call this when zodiac changes
+        function updatePrediction() {
+            // Set date label
+            if (predictionDateEl && predDateMap[predDate]) {
+                predictionDateEl.textContent = predDateMap[predDate]();
+            }
+            // Show loader in active tab
+            const activeContent = getActivePredictionContent();
+            if (activeContent) {
+                activeContent.innerHTML = '<span class="spinner-border spinner-border-sm text-primary" role="status" aria-hidden="true"></span> Loading...';
+            }
+            // Fetch prediction
+            // Use dynamic base URL for dev/prod
+            const apiBase = (window.location.port === '8000' || window.location.hostname === '127.0.0.1')
+                ? `${window.location.protocol}//${window.location.hostname}:8000`
+                : '';
+            fetch(`${apiBase}/api/prediction?sign=${encodeURIComponent(predSign)}&date=${encodeURIComponent(predDate)}&category=${encodeURIComponent(predCategory)}`)
+                .then(res => res.json())
+                .then(data => {
+                    const activeContent = getActivePredictionContent();
+                    if (activeContent) {
+                        if (data.prediction) {
+                            activeContent.textContent = data.prediction;
+                        } else {
+                            activeContent.textContent = 'Prediction unavailable.';
+                        }
+                    }
+                })
+                .catch(() => {
+                    const activeContent = getActivePredictionContent();
+                    if (activeContent) {
+                        activeContent.textContent = 'Prediction unavailable.';
+                    }
+                });
+        }
+        // Initial load: ensure correct tab/category
+        updatePrediction();
+        // Remove duplicate zodiac event listener for prediction sign
+    })();
+
+    // Safe tab switching for prediction categories
+    document.querySelectorAll('.prediction-categories li').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.prediction-categories li').forEach(t => {
+                if (t && t.classList) t.classList.remove('active');
+            });
+            document.querySelectorAll('.tab-content').forEach(c => {
+                if (c && c.classList) c.classList.remove('active');
+            });
+            if (tab && tab.classList) tab.classList.add('active');
+            const contentEl = document.getElementById(tab.dataset.tab);
+            if (contentEl && contentEl.classList) contentEl.classList.add('active');
+        });
+    });
+</script>
+@endpush

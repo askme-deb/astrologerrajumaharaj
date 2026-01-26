@@ -10,6 +10,9 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\BlogController;
 
+use App\Http\Controllers\HoroscopeController;
+use App\Http\Controllers\PredictionController;
+
 Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/privacy-policy', [PrivacyPolicyController::class, 'show'])->name('privacy.policy');
@@ -19,3 +22,7 @@ Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
 Route::get('/blog-details', [BlogController::class, 'show'])->name('blog.details');
 
+// Horoscope proxy endpoint
+Route::get('/api/horoscope/{sign}', [HoroscopeController::class, 'get']);
+
+Route::get('/api/prediction', [PredictionController::class, 'get']);

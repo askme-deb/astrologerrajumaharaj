@@ -289,20 +289,20 @@ document.querySelectorAll(".section-header-acc").forEach(header => {
 </script>
 
 <script>
-    window.addEventListener("load", function () {
-  setTimeout(() => {
-    document.getElementById("videoPopup").classList.add("active");
-  }, 500); // delay before popup opens
-});
+//     window.addEventListener("load", function () {
+//   setTimeout(() => {
+//     document.getElementById("videoPopup").classList.add("active");
+//   }, 500); // delay before popup opens
+// });
 
-function closePopup() {
-  const popup = document.getElementById("videoPopup");
-  popup.classList.remove("active");
+// function closePopup() {
+//   const popup = document.getElementById("videoPopup");
+//   popup.classList.remove("active");
 
-  const video = popup.querySelector("video");
-  video.pause();
-  video.currentTime = 0;
-}
+//   const video = popup.querySelector("video");
+//   video.pause();
+//   video.currentTime = 0;
+// }
 
 </script>
 

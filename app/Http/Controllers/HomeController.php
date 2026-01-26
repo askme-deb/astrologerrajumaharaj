@@ -8,6 +8,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $endpoint =  'https://astro.flexcellents.com/api/v1/astrologers';
+        return view('home', [
+            'astrologersEndpoint' => $endpoint,
+        ]);
     }
 }
