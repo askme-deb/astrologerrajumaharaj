@@ -385,7 +385,7 @@
                     @endphp
 
                     @foreach($zodiacs as $zodiac)
-                    <div class="col-lg-4 col-md-4 col-6">
+                    <div class="col-lg-12 col-md-4 col-6">
                         <a href="javascript:void(0)"
                             class="zodiac-card"
                             data-sign="{{ $zodiac['sign'] }}">
