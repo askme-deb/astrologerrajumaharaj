@@ -172,7 +172,7 @@
 
             <div class="course-card" data-aos="fade-right">
                 <div class="course-thumb">
-                    <img src="{{ asset('assets/images/courses-post.png') }}" alt="Vedic Astrology Course">
+                    <img src="{{ asset('assets/images/course1.png') }}" alt="Vedic Astrology Course">
                 </div>
                 <div class="course-body">
                     <div class="stars text-yellow">
@@ -193,7 +193,7 @@
 
             <div class="course-card" data-aos="fade-up">
                 <div class="course-thumb">
-                    <img src="{{ asset('assets/images/courses-post.png') }}" alt="Vedic Astrology Course">
+                    <img src="{{ asset('assets/images/course2.png') }}" alt="Vedic Astrology Course">
                 </div>
                 <div class="course-body">
                     <div class="stars text-yellow">
@@ -218,7 +218,7 @@
 
             <div class="course-card" data-aos="fade-left">
                 <div class="course-thumb">
-                    <img src="images/courses-post.png" alt="Vedic Astrology Course">
+                    <img src="{{ asset('assets/images/course3.png') }}" alt="Vedic Astrology Course">
                 </div>
                 <div class="course-body">
                     <div class="stars text-yellow">
@@ -405,7 +405,7 @@
             <div class="donation-content">
                 <h2>Small Acts. Big Change.</h2>
                 <p>Join hands with us to support meaningful causes and create a brighter future.</p>
-                <a href="donation.php" class="donate-btn">Make a Donation</a>
+                <a href="#" class="donate-btn">Make a Donation</a>
             </div>
         </div>
 
@@ -433,7 +433,7 @@
     <div class="container">
         <div class="section-header">
             <h2>Celestial Moments <span class="highlight-text">Gallery</span></h2>
-            <a href="#" class="view-all-btn">View All</a>
+            <!-- <a href="#" class="view-all-btn">View All</a> -->
         </div>
 
         <div class="video-grid">
