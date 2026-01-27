@@ -26607,7 +26607,7 @@ nav a.active {
 
 .buy-btn {
     background: none;
-    border: 2px solid #333;
+    border: none;
     padding: 6px 24px;
     border-radius: 5px;
     cursor: pointer;
@@ -26615,6 +26615,8 @@ nav a.active {
     transition: all 0.3s ease;
     letter-spacing: 0.3px;
     height: 40px;
+    background: linear-gradient(135deg, #fe9935, #d92c32);
+    color: #fff;
 }
 
 .buy-btn:hover {
@@ -32895,7 +32897,7 @@ aside.course-card {
 .info-cards-section .card {min-height: 484px;}
 
 div#astrologersGrid {display: flex;gap: 20px;}
-.skills span.skill-badge {width: 74%;text-align: center;}
+.skills span.skill-badge {width: 100%;text-align: center;font-size: 11px !important;}
 
 .gem-card p {
     padding: 0 20px;
