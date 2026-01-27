@@ -115,7 +115,7 @@
                 <h2>Buy Gemstones <span class="highlight-text">Online</span></h2>
                 <p class="sub-heading">Products Of Trusted Excellence</p>
             </div>
-            <a href="#" class="view-all-btn">View All</a>
+            <a href="https://ecommerce.astrorajumaharaj.com/" target="_blank" class="view-all-btn">View All</a>
         </div>
 
 
