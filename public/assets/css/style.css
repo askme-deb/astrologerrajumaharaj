@@ -583,7 +583,7 @@ nav a.active {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .gem-card h3 {
@@ -4101,7 +4101,7 @@ nav a.active {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .gem-card h3 {
@@ -8010,7 +8010,7 @@ nav a.active {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .gem-card h3 {
@@ -11529,7 +11529,7 @@ nav a.active {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .gem-card h3 {
@@ -15609,7 +15609,7 @@ nav a.active {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .gem-card h3 {
@@ -19127,7 +19127,7 @@ nav a.active {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .gem-card h3 {
@@ -23036,7 +23036,7 @@ nav a.active {
   width: 120px;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .gem-card h3 {
@@ -26528,7 +26528,7 @@ nav a.active {
   background: #fff;
   border: 1px solid #f0f0f0;
   border-radius: 18px;
-  padding: 24px;
+  padding: 0px;
   text-align: center;
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
@@ -26554,9 +26554,9 @@ nav a.active {
 
 .gem-img-box img {
   width: 120px;
-  height: auto;
+  height: 200px;
   margin-bottom: 15px;
-  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+  /* filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2)); */
 }
 
 .gem-card h3 {
@@ -32849,8 +32849,8 @@ aside.course-card {
   background-size: contain;
   background-repeat: no-repeat;
   animation: animName 25s linear infinite;
-  top: 43px;
-  left: 150px;
+  top: 113px;
+  right: 40px;
 }
 
 @keyframes animName {
