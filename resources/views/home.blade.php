@@ -103,7 +103,7 @@
                 </div>
             </div>
             <div id="astrologersError" class="alert alert-danger" style="display:none;"></div>
-            <div id="astrologersGrid" class="owl-carousel owl-theme"></div>
+            <div id="astrologersGrid" class="owl-carousel owl-theme astrologers-carousel"></div>
         </div>
     </div>
 </section>
@@ -555,6 +555,7 @@
             }
         };
 
+
         const load = async () => {
             try {
                 const res = await fetch(endpoint, {
@@ -563,7 +564,6 @@
                     }
                 });
                 if (!res.ok) throw new Error(`Request failed: ${res.status}`);
-
 
                 const payload = await res.json();
                 console.log('Astrologers API response:', payload);
@@ -577,6 +577,23 @@
                 if (errorEl) errorEl.style.display = 'none';
 
                 gridEl.innerHTML = items.map(renderCard).join('');
+
+                // Initialize Owl Carousel after content is loaded
+                if (window.jQuery && typeof window.jQuery.fn.owlCarousel === 'function') {
+                    window.jQuery('.astrologers-carousel').owlCarousel({
+                        loop: true,
+                        margin: 20,
+                        nav: true,
+                        dots: false,
+                        responsive: {
+                            0: { items: 1 },
+                            600: { items: 2 },
+                            1000: { items: 3 }
+                        }
+                    });
+                } else {
+                    console.warn('Owl Carousel is not loaded.');
+                }
             } catch (e) {
                 showError('Could not load astrologers. Please try again.');
             }
