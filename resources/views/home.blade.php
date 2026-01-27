@@ -130,7 +130,7 @@
                             <img src="{{ $product['image_url'] ?? asset('assets/images/default.png') }}" alt="{{ $product['name'] }}">
                         </div>
                         <h3>{{ $product['name'] }}</h3>
-                        <p class="gem-desc">{!! $product['sort_description'] ?? '' !!}</p>
+                        {!! $product['sort_description'] ?? '' !!}
                         <div class="price">
                             @if(isset($product['discount_price']) && $product['discount_price'] > 0)
                                 <span class="old-price">Rs. {{ $product['price'] }}/-</span>
