@@ -58,7 +58,7 @@
           <a href="{{ route('blog.details') }}" class="read-more">Read More →</a>
         </div>
       </div>
-      <div class="blog-card">
+      <!-- <div class="blog-card">
         <div class="card-img">
           <img src="{{ asset('assets/images/courses post.png') }}" alt="">
           <span class="category">Zodiac</span>
@@ -87,7 +87,7 @@
           <p>Ancient mantras to reduce planetary doshas and enhance positive cosmic energies.</p>
           <a href="{{ route('blog.details') }}" class="read-more">Read More →</a>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- Pagination -->
     <div class="pagination">
