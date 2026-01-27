@@ -129,71 +129,32 @@
 
 
         <div class="owl-carousel gemstones-carousel owl-theme">
-
-            <div class="item">
-                <div class="gem-card" data-aos="fade-up">
-                    <div class="gem-img-box">
-                        <img src="{{ asset('assets/images/product_4.png') }}" alt="Yellow Sapphire">
-                    </div>
-                    <h3>Yellow Sapphire</h3>
-                    <p class="gem-desc">Divine Luck, Prosperity, Blissful Matrimony</p>
-                    <div class="price">Rs. 3000/-</div>
-                    <div class="gem-footer">
-                        <button class="icon-btn"><i class="fas fa-shopping-bag"></i></button>
-                        <button class="buy-btn">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="gem-card">
-                    <div class="badge-off">20% Off</div>
-                    <div class="gem-img-box">
-                        <img src="{{ asset('assets/images/product_1.png') }}" alt="Blue Sapphire">
-                    </div>
-                    <h3>Blue Sapphire</h3>
-                    <p class="gem-desc">Great Fame, Discipline, Removes Misfortunes</p>
-                    <div class="price">
-                        <span class="old-price">Rs. 5000/-</span>
-                        <span class="new-price">Rs. 3000/-</span>
-                    </div>
-                    <div class="gem-footer">
-                        <button class="icon-btn"><i class="fas fa-shopping-bag"></i></button>
-                        <button class="buy-btn">Buy Now</button>
+            @foreach($products as $product)
+                <div class="item">
+                    <div class="gem-card" data-aos="fade-up">
+                        @if(isset($product['discount_rate']) && $product['discount_rate'] > 0)
+                            <div class="badge-off">{{ (int)$product['discount_rate'] }}% Off</div>
+                        @endif
+                        <div class="gem-img-box">
+                            <img src="{{ $product['image_url'] ?? asset('assets/images/default.png') }}" alt="{{ $product['name'] }}">
+                        </div>
+                        <h3>{{ $product['name'] }}</h3>
+                        <p class="gem-desc">{!! $product['sort_description'] ?? '' !!}</p>
+                        <div class="price">
+                            @if(isset($product['discount_price']) && $product['discount_price'] > 0)
+                                <span class="old-price">Rs. {{ $product['price'] }}/-</span>
+                                <span class="new-price">Rs. {{ $product['discount_price'] }}/-</span>
+                            @else
+                                Rs. {{ $product['price'] }}/-
+                            @endif
+                        </div>
+                        <div class="gem-footer">
+                            <button class="icon-btn"><i class="fas fa-shopping-bag"></i></button>
+                            <button class="buy-btn">Buy Now</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="item">
-                <div class="gem-card">
-                    <div class="gem-img-box">
-                        <img src="{{ asset('assets/images/product_2.png') }}" alt="Emerald">
-                    </div>
-                    <h3>Emerald</h3>
-                    <p class="gem-desc">Vocal Charm, Creativity, Success in Business</p>
-                    <div class="price">Rs. 800/-</div>
-                    <div class="gem-footer">
-                        <button class="icon-btn"><i class="fas fa-shopping-bag"></i></button>
-                        <button class="buy-btn">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="item">
-                <div class="gem-card">
-                    <div class="gem-img-box">
-                        <img src="{{ asset('assets/images/product_3.png') }}" alt="Ruby">
-                    </div>
-                    <h3>Ruby</h3>
-                    <p class="gem-desc">Great Health, Will Power, Fame & Reputation</p>
-                    <div class="price">Rs. 3500/-</div>
-                    <div class="gem-footer">
-                        <button class="icon-btn"><i class="fas fa-shopping-bag"></i></button>
-                        <button class="buy-btn">Buy Now</button>
-                    </div>
-                </div>
-            </div>
-
+            @endforeach
         </div>
 </section>
 
