@@ -578,9 +578,16 @@
 
                 gridEl.innerHTML = items.map(renderCard).join('');
 
-                // Initialize Owl Carousel after content is loaded
+                // Reference: Product carousel initialization
                 if (window.jQuery && typeof window.jQuery.fn.owlCarousel === 'function') {
-                    window.jQuery('.astrologers-carousel').owlCarousel({
+                    var $carousel = window.jQuery('.astrologers-carousel');
+                    // Destroy if already initialized
+                    if ($carousel.hasClass('owl-loaded')) {
+                        $carousel.trigger('destroy.owl.carousel');
+                        $carousel.removeClass('owl-loaded owl-hidden');
+                        $carousel.find('.owl-stage-outer').children().unwrap();
+                    }
+                    $carousel.owlCarousel({
                         loop: true,
                         margin: 20,
                         nav: true,

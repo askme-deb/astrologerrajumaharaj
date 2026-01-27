@@ -26560,8 +26560,9 @@ nav a.active {
 }
 
 .gem-card h3 {
-  font-size: 17px;
-  margin-bottom: 5px;
+     font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .gem-desc {
@@ -26603,15 +26604,15 @@ nav a.active {
 }
 
 .buy-btn {
-  background: none;
-  border: 2px solid #333;
-  padding: 0 24px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  letter-spacing: 0.3px;
-  height: 40px;
+    background: none;
+    border: 2px solid #333;
+    padding: 6px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    letter-spacing: 0.3px;
+    height: 40px;
 }
 
 .buy-btn:hover {
@@ -26796,14 +26797,13 @@ nav a.active {
 
 /* --- KUNDALI BANNER --- */
 .kundali-banner {
-  /* Background Image Path */
-  background-image: url("../images/check-your-kundali-banner.png");
-  background-size: contain;
-  background-position: center;
-  /* padding: 120px 0; */
-  position: relative;
-  min-height: 270px;
-  background-repeat: no-repeat;
+    background-image: url(../images/check-your-kundali-banner.png);
+    background-size: cover;
+    background-position: center;
+    /* padding: 120px 0; */
+    position: relative;
+    min-height: 520px;
+    background-repeat: no-repeat;
 }
 
 /* Dark overlay for readability */
@@ -32895,6 +32895,13 @@ aside.course-card {
 div#astrologersGrid {display: flex;gap: 20px;}
 .skills span.skill-badge {width: 74%;text-align: center;}
 
+.gem-card p {
+    padding: 0 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 
 
