@@ -206,12 +206,15 @@
                         <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
                         <span>Astro Tungeesh</span>
                     </div>
-                    <div class="course-footer">
+                    <!-- <div class="course-footer">
                         <div class="course-price">
                             <span>Rs. 1000/-</span>
                             <small>Inclusive of 18% GST</small>
                         </div>
                         <button class="icon-btn-outline"><i class="fas fa-shopping-bag"></i></button>
+                    </div> -->
+                    <div class="course-footer">
+                        <button class="enroll-btn">Enroll Course</button>
                     </div>
                 </div>
             </div>
@@ -231,12 +234,15 @@
                         <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
                         <span>Astro Tungeesh</span>
                     </div>
-                    <div class="course-footer">
+                    <!-- <div class="course-footer">
                         <div class="course-price">
                             <span>Rs. 1000/-</span>
                             <small>Inclusive of 18% GST</small>
                         </div>
                         <button class="icon-btn-outline"><i class="fas fa-shopping-bag"></i></button>
+                    </div> -->
+                    <div class="course-footer">
+                        <button class="enroll-btn">Enroll Course</button>
                     </div>
                 </div>
             </div>
