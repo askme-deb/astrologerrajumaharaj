@@ -90,12 +90,13 @@
       </div> -->
     </div>
     <!-- Pagination -->
-    <div class="pagination">
+    <!-- <div class="pagination">
       <a class="active">1</a>
       <a>2</a>
       <a>3</a>
       <a>Next →</a>
-    </div>
+    </div> -->
+    
   </div>
 </section>
 @endsection

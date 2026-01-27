@@ -26450,14 +26450,15 @@ nav a.active {
 }
 
 .astro-card {
-  background: #fff;
-  border-radius: 18px;
-  padding: 20px;
-  display: flex;
-  gap: 18px;
-  /* box-shadow: 0 4px 20px rgba(0,0,0,0.08); */
-  border: 1px solid #f0f0f0;
-  transition: all 0.3s ease;
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    display: flex;
+    gap: 18px;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+    min-height: 485px;
 }
 
 .astro-card:hover {
@@ -26533,6 +26534,7 @@ nav a.active {
   position: relative;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    padding-bottom: 30px;
 }
 
 .gem-card:hover {
@@ -26560,7 +26562,7 @@ nav a.active {
 }
 
 .gem-card h3 {
-     font-size: 20px;
+     font-size: 15px;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -32901,6 +32903,7 @@ div#astrologersGrid {display: flex;gap: 20px;}
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-size: 14px;
 }
 
 
