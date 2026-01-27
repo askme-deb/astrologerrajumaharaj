@@ -7,7 +7,7 @@
                 <!-- <span class="logo-text-white">Logo Here</span> -->
             </div>
 
-            <h4>Astroyogi Mobile Apps</h4>
+            <h4>Astrologer Raju Maharaj</h4>
             <a href="#" class="app-badge">
                 <div class="play-store-btn">
                     <i class="fab fa-google-play"></i>
@@ -48,19 +48,16 @@
             <ul class="contact-list">
                 <li>
                     <i class="fas fa-headset"></i>
-                    Call +91 9876543210
+                    Call +91 90918 40899
                 </li>
-                <li>
-                    <i class="fas fa-headset"></i>
-                    Call +91 9876543210
-                </li>
+               
                 <li>
                     <i class="far fa-envelope"></i>
-                    info@test.com
+                    contact@astrorajumaharaj.com
                 </li>
                 <li>
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Kolkata Office: xxx, S P Mukherjee Road, test Point, Kolkata, 700026</span>
+                    <span>Bagda, P.S.-Puncha, Dist. - Purulia, West Bengal, Pin - 723151</span>
                 </li>
             </ul>
             <div id="fb-root"></div>
@@ -70,6 +67,6 @@
     </div>
 
     <div class="copyright-bar">
-        <p>Copyright © 2025 test.com - All Rights Reserved</p>
+        <p>Copyright © 2026 www.astrorajumaharaj.com - All Rights Reserved</p>
     </div>
 </footer>

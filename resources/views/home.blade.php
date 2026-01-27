@@ -44,7 +44,7 @@
                             <span>M T W T F S S</span>
                             <small>Available: Mon-Sun, 9am-9pm</small>
                         </div>
-                        <a href="{{ url('/consultation') }}" class="card-btn">Learn more</a>
+                        <a href="https://jyotish.astrorajumaharaj.com/consultation" class="card-btn">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@
                             <span>M T W T F S S</span>
                             <small>Consultation: Daily, 10am-8pm</small>
                         </div>
-                        <a href="{{ url('/gemstones') }}" class="card-btn">Learn more</a>
+                        <a href="https://ecommerce.astrorajumaharaj.com/" class="card-btn">Learn more</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@
                             <span>M T W T F S S</span>
                             <small>Updated: Every Morning</small>
                         </div>
-                        <a href="{{ url('/horoscope') }}" class="card-btn">Learn more</a>
+                        <a href="https://jyotish.astrorajumaharaj.com/consultation" class="card-btn">Learn more</a>
                     </div>
 
                 </div>
@@ -96,8 +96,7 @@
             <a href="https://jyotish.astrorajumaharaj.com/consultation" target="_blank" class="view-all-btn">View All</a>
         </div>
 
-        <div class="row astrologers-grid">
-
+        <div class="astrologers-carousel-wrapper">
             <div id="astrologersLoading" style="padding: 30px 0; text-align: center;">
                 <div class="spinner-border text-primary" role="status">
                     <span class="visually-hidden">Loading...</span>
@@ -105,14 +104,6 @@
             </div>
             <div id="astrologersError" class="alert alert-danger" style="display:none;"></div>
             <div id="astrologersGrid" class="owl-carousel owl-theme"></div>
-            <style>
-                #astrologersGrid.grid {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-                    gap: 24px;
-                }
-            </style>
-            <div id="astrologersGrid" class="grid"></div>
         </div>
     </div>
 </section>
@@ -150,7 +141,7 @@
                         </div>
                         <div class="gem-footer">
                             <button class="icon-btn"><i class="fas fa-shopping-bag"></i></button>
-                            <button class="buy-btn">Buy Now</button>
+                            <a href="https://ecommerce.astrorajumaharaj.com/product/details/{{ $product['slug'] }}" target="_blank" class="buy-btn">Buy Now</a>
                         </div>
                     </div>
                 </div>
@@ -163,7 +154,7 @@
         <div class="sale-banner-placeholder">
             <div class="banner-content">
                 <h2>20% OFF <br> SUPER SALE</h2>
-                <button>ORDER NOW</button>
+                <button onclick="https://ecommerce.astrorajumaharaj.com/">ORDER NOW</button>
             </div>
         </div>
     </div>
@@ -259,7 +250,7 @@
         <div class="stat-item">
             <i class="fas fa-users"></i>
             <span>
-                <strong>5,000+</strong><br>
+                <strong>100+</strong><br>
                 Verified Astrologers
             </span>
         </div>
@@ -267,7 +258,7 @@
         <div class="stat-item">
             <i class="fas fa-calendar-alt"></i>
             <span>
-                <strong>24+ Years</strong><br>
+                <strong>15+ Years</strong><br>
                 Trusted Experience
             </span>
         </div>
@@ -275,7 +266,7 @@
         <div class="stat-item">
             <i class="fas fa-smile"></i>
             <span>
-                <strong>3 Crore+</strong><br>
+                <strong>10k+</strong><br>
                 Satisfied Clients
             </span>
         </div>
@@ -283,7 +274,7 @@
         <div class="stat-item">
             <i class="fas fa-globe"></i>
             <span>
-                <strong>85+</strong><br>
+                <strong>10+</strong><br>
                 Countries Served
             </span>
         </div>
@@ -429,7 +420,7 @@
             <h2>About Me – Your Trusted Astrologer</h2>
             <p>Astrologer <b>Raju Maharaj</b> is a highly respected and experienced Vedic astrologer, known for his deep knowledge of astrology, horoscope analysis, and spiritual guidance. With years of dedicated practice, he has helped thousands of individuals find clarity, balance, and direction in their lives.</p>
             <p>Raju Maharaj specializes in <b>Vedic Astrology, Kundli Matching, Marriage & Relationship Guidance, Career and Business Astrology, Health Predictions, and Gemstone Consultation</b>.</p>
-            <a href="about.php" class="btn btn-primary header-btn">Read More</a>
+            <a href="{{ route('about') }}" class="btn btn-primary header-btn">Read More</a>
         </div>
         <div class="about-image">
             <img src="{{ asset('assets/images/about us circle.png') }}" alt="Zodiac Wheel" class="rotating-wheel">
