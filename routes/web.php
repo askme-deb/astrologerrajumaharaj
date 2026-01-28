@@ -24,7 +24,7 @@ Route::get('/blog-details', [BlogController::class, 'show'])->name('blog.details
 Route::get('/blog-details2', [BlogController::class, 'blog_details2'])->name('blog.details2');
 Route::get('/blog-details3', [BlogController::class, 'blog_details3'])->name('blog.details3');
 
-// Horoscope proxy endpoint
+// Horoscope proxy endpointt
 Route::get('/api/horoscope/{sign}', [HoroscopeController::class, 'get']);
 
 Route::get('/api/prediction', [PredictionController::class, 'get']);
