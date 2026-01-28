@@ -15,4 +15,14 @@ class BlogController extends Controller
     {
         return view('blog-details');
     }
+
+    public function blog_details2()
+    {
+        return view('blog-details2');
+    }
+
+    public function blog_details3()
+    {
+        return view('blog-details3');
+    }
 }

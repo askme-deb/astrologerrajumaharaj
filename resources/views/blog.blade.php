@@ -15,7 +15,7 @@
       <!-- Blog Card -->
       <div class="blog-card">
         <div class="card-img">
-          <img src="{{ asset('assets/images/courses post.png') }}" alt="">
+          <img src="{{ asset('assets/images/top-7.png') }}" alt="">
           <span class="category">Vedic Astrology</span>
         </div>
         <div class="card-content">
@@ -23,14 +23,14 @@
             <span>Jan 3, 2026</span>
             <span>Astro Tungeesh</span>
           </div>
-          <h3>Understanding Your Birth Chart: A Complete Guide</h3>
-          <p>Your birth chart reveals planetary positions influencing your destiny, personality, and life path.</p>
+          <h3>Top 7 Signs the Universe Is Trying to Send You a Message</h3>
+          <p>Have you ever felt like life is trying to tell you something—but you can’t quite figure out what?</p>
           <a href="{{ route('blog.details') }}" class="read-more">Read More →</a>
         </div>
       </div>
       <div class="blog-card">
         <div class="card-img">
-          <img src="{{ asset('assets/images/courses post.png') }}" alt="">
+          <img src="{{ asset('assets/images/how-astrology.png') }}" alt="">
           <span class="category">Gemstones</span>
         </div>
         <div class="card-content">
@@ -38,14 +38,14 @@
             <span>Dec 28, 2025</span>
             <span>Dr. Meera Sharma</span>
           </div>
-          <h3>Top 5 Gemstones for Career Success</h3>
-          <p>Discover powerful gemstones that can boost professional growth and financial stability.</p>
-          <a href="{{ route('blog.details') }}" class="read-more">Read More →</a>
+          <h3>How Astrology Can Help You Make Better Career & Business Decisions</h3>
+          <p>In today’s fast-moving professional world, career and business decisions are rarely simple.</p>
+          <a href="{{ route('blog.details2') }}" class="read-more">Read More →</a>
         </div>
       </div>
       <div class="blog-card">
         <div class="card-img">
-          <img src="{{ asset('assets/images/courses post.png') }}" alt="">
+          <img src="{{ asset('assets/images/common-astrology.png') }}" alt="">
           <span class="category">Vastu</span>
         </div>
         <div class="card-content">
@@ -53,50 +53,12 @@
             <span>Dec 20, 2025</span>
             <span>Pt. Rajesh Kumar</span>
           </div>
-          <h3>Vastu Tips for a Harmonious Home</h3>
-          <p>Simple Vastu principles to bring peace, prosperity, and positive energy to your home.</p>
-          <a href="{{ route('blog.details') }}" class="read-more">Read More →</a>
+          <h3>Common Astrology Myths People Still Believe (And the Truth Behind Them)</h3>
+          <p>Astrology has been practiced for thousands of years, yet it remains one of the most misunderstood subjects in the modern world. </p>
+          <a href="{{ route('blog.details3') }}" class="read-more">Read More →</a>
         </div>
       </div>
-      <!-- <div class="blog-card">
-        <div class="card-img">
-          <img src="{{ asset('assets/images/courses post.png') }}" alt="">
-          <span class="category">Zodiac</span>
-        </div>
-        <div class="card-content">
-          <div class="meta">
-            <span>Dec 15, 2025</span>
-            <span>Acharya Vikram</span>
-          </div>
-          <h3>2026 Horoscope Predictions for All Zodiac Signs</h3>
-          <p>Explore love, career, health, and finance predictions for every zodiac sign.</p>
-          <a href="{{ route('blog.details') }}" class="read-more">Read More →</a>
-        </div>
-      </div>
-      <div class="blog-card">
-        <div class="card-img">
-          <img src="{{ asset('assets/images/courses post.png') }}" alt="">
-          <span class="category">Remedies</span>
-        </div>
-        <div class="card-content">
-          <div class="meta">
-            <span>Dec 10, 2025</span>
-            <span>Dr. Meera Sharma</span>
-          </div>
-          <h3>Powerful Mantras for Planetary Peace</h3>
-          <p>Ancient mantras to reduce planetary doshas and enhance positive cosmic energies.</p>
-          <a href="{{ route('blog.details') }}" class="read-more">Read More →</a>
-        </div>
-      </div> -->
     </div>
-    <!-- Pagination -->
-    <!-- <div class="pagination">
-      <a class="active">1</a>
-      <a>2</a>
-      <a>3</a>
-      <a>Next →</a>
-    </div> -->
-    
   </div>
 </section>
 @endsection
