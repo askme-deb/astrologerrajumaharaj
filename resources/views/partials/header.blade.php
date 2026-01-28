@@ -54,7 +54,7 @@
                     <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://jyotish.astrorajumaharaj.com" target="_blank">Consultation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://education.astrorajumaharaj.com" target="_blank">Online Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{route('online.classes')}}">Online Classes</a></li>
                     <li class="nav-item"><a class="nav-link" href="https://ecommerce.astrorajumaharaj.com" target="_blank">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
 

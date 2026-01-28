@@ -46,4 +46,9 @@ class PredictionController extends Controller
             'prediction' => $text
         ]);
     }
+
+    public function online_classes()
+    {
+        return view('online-classes');
+    }
 }

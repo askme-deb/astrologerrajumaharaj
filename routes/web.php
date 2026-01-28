@@ -26,3 +26,5 @@ Route::get('/blog-details', [BlogController::class, 'show'])->name('blog.details
 Route::get('/api/horoscope/{sign}', [HoroscopeController::class, 'get']);
 
 Route::get('/api/prediction', [PredictionController::class, 'get']);
+
+Route::get('/online/classes', [PredictionController::class, 'online_classes'])->name('online.classes');
