@@ -51,12 +51,24 @@
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
 
-                    <li class="nav-item"><a class="nav-link active" href="./">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://jyotish.astrorajumaharaj.com" target="_blank">Consultation</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{route('online.classes')}}">Online Classes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://ecommerce.astrorajumaharaj.com" target="_blank">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}" href="{{ route('about') }}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://jyotish.astrorajumaharaj.com" target="_blank">Consultation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('online.classes') ? 'active' : '' }}" href="{{ route('online.classes') }}">Online Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ecommerce.astrorajumaharaj.com" target="_blank">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{ request()->routeIs('blog') ? 'active' : '' }}" href="{{ route('blog') }}">Blog</a>
+                    </li>
 
               
 

@@ -20,7 +20,8 @@ Route::get('/terms', [TermsController::class, 'show'])->name('terms');
 Route::get('/about', [AboutController::class, 'show'])->name('about');
 Route::get('/contact', [ContactController::class, 'show'])->name('contact');
 Route::get('/blog', [BlogController::class, 'index'])->name('blog');
-Route::get('/blog-details', [BlogController::class, 'show'])->name('blog.details');
+Route::get('/blog/{slug}', [BlogController::class, 'show'])->name('blog.details');
+Route::get('/blog/category/{category}', [BlogController::class, 'category'])->name('blog.category');
 Route::get('/blog-details2', [BlogController::class, 'blog_details2'])->name('blog.details2');
 Route::get('/blog-details3', [BlogController::class, 'blog_details3'])->name('blog.details3');
 
