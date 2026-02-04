@@ -97,9 +97,41 @@
         </div>
 
         <div class="astrologers-carousel-wrapper">
-            <div id="astrologersLoading" style="padding: 30px 0; text-align: center;">
-                <div class="spinner-border text-primary" role="status">
-                    <span class="visually-hidden">Loading...</span>
+            <div id="astrologersLoading" style="padding: 30px 0;">
+                <div class="astro-skeletons">
+                    <div class="astro-card skeleton">
+                        <div class="astro-image skeleton-img"></div>
+                        <div class="astro-info">
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-skill"></div>
+                            <div class="skeleton-line skeleton-skill short"></div>
+                            <div class="skeleton-line skeleton-lang"></div>
+                            <div class="skeleton-line skeleton-exp"></div>
+                            <div class="skeleton-line skeleton-btn"></div>
+                        </div>
+                    </div>
+                    <div class="astro-card skeleton">
+                        <div class="astro-image skeleton-img"></div>
+                        <div class="astro-info">
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-skill"></div>
+                            <div class="skeleton-line skeleton-skill short"></div>
+                            <div class="skeleton-line skeleton-lang"></div>
+                            <div class="skeleton-line skeleton-exp"></div>
+                            <div class="skeleton-line skeleton-btn"></div>
+                        </div>
+                    </div>
+                    <div class="astro-card skeleton">
+                        <div class="astro-image skeleton-img"></div>
+                        <div class="astro-info">
+                            <div class="skeleton-line skeleton-title"></div>
+                            <div class="skeleton-line skeleton-skill"></div>
+                            <div class="skeleton-line skeleton-skill short"></div>
+                            <div class="skeleton-line skeleton-lang"></div>
+                            <div class="skeleton-line skeleton-exp"></div>
+                            <div class="skeleton-line skeleton-btn"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="astrologersError" class="alert alert-danger" style="display:none;"></div>
@@ -120,6 +152,7 @@
 
 
         <div class="owl-carousel gemstones-carousel owl-theme">
+                       
             @foreach($products as $product)
                 <div class="item">
                     <div class="gem-card" data-aos="fade-up">
@@ -470,12 +503,31 @@
     </div>
 </section>
 @endsection
+@push('scripts')
+<script>
+    $(document).ready(function() {
+        if ($('.gemstones-carousel').length) {
+            $('.gemstones-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+        }
+    });
+</script>
+@endpush
 
 @push('scripts')
 <script>
     (function() {
         const endpoint = @json($astrologersEndpoint);
-        console.log('Astrologers API endpoint:', endpoint);
+        //console.log('Astrologers API endpoint:', endpoint);
         const loadingEl = document.getElementById('astrologersLoading');
         const errorEl = document.getElementById('astrologersError');
         const gridEl = document.getElementById('astrologersGrid');
@@ -490,23 +542,27 @@
                 .replace(/'/g, '&#039;');
         };
 
-        const renderCard = (a) => {
+        const renderCard = (a, idx) => {
             const name = escapeHtml(a.name);
-            let skills = '';
+            let skillsArr = [];
             if (Array.isArray(a.skills)) {
                 if (typeof a.skills[0] === 'object' && a.skills[0] !== null && 'name' in a.skills[0]) {
-                    skills = a.skills.map(s => escapeHtml(s.name)).join(', ');
+                    skillsArr = a.skills.map(s => escapeHtml(s.name));
                 } else {
-                    skills = a.skills.map(escapeHtml).join(', ');
+                    skillsArr = a.skills.map(escapeHtml);
                 }
-            } else {
-                skills = escapeHtml(a.skills);
+            } else if (a.skills) {
+                skillsArr = [escapeHtml(a.skills)];
             }
+            const maxSkills = 2;
+            const shownSkills = skillsArr.slice(0, maxSkills);
+            const hiddenSkills = skillsArr.slice(maxSkills);
             const languages = Array.isArray(a.languages) ? a.languages.map(escapeHtml).join(', ') : escapeHtml(a.languages);
             const exp = Number(a.experience ?? 0);
             const rating = Number(a.rating ?? 0).toFixed(1);
             const consults = Number(a.consultations ?? 0);
             const imageUrl = escapeHtml(a.image_url);
+            const cardId = `astro-card-skills-${idx}`;
 
             return `
                 <div class="astro-card">
@@ -515,10 +571,56 @@
                     </div>
                     <div class="astro-info">
                         <h3>${name}</h3>
-                        <div class="skills">
-                            ${skills.split(', ').map(skill => `<span class="skill-badge">${skill}</span>`).join(' ')}
+                        <div class="skills" id="${cardId}">
+                            ${shownSkills.map(skill => `<span class='skill-badge'>${skill}</span>`).join(' ')}
+                            ${hiddenSkills.length > 0 ? `<span class='skill-badge skill-more' data-idx='${idx}'>+${hiddenSkills.length} others</span>` : ''}
+                            <span class="d-none all-skills">${skillsArr.map(skill => `<span class='skill-badge'>${skill}</span>`).join(' ')}</span>
                         </div>
                         <style>
+                                /* Skeleton Loader Styles */
+                                .astro-skeletons {
+                                    display: flex;
+                                    gap: 20px;
+                                    justify-content: center;
+                                }
+                                .astro-card.skeleton {
+                                    background: #fff;
+                                    border-radius: 16px;
+                                    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+                                    padding: 20px;
+                                    width: 320px;
+                                    min-width: 280px;
+                                    min-height: 340px;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    opacity: 0.8;
+                                }
+                                .skeleton-img {
+                                    width: 90px;
+                                    height: 90px;
+                                    border-radius: 50%;
+                                    background: linear-gradient(90deg, #ececec 25%, #f5f5f5 50%, #ececec 75%);
+                                    margin-bottom: 18px;
+                                    animation: skeleton-loading 1.2s infinite linear;
+                                }
+                                .skeleton-line {
+                                    height: 16px;
+                                    background: linear-gradient(90deg, #ececec 25%, #f5f5f5 50%, #ececec 75%);
+                                    border-radius: 8px;
+                                    margin-bottom: 12px;
+                                    animation: skeleton-loading 1.2s infinite linear;
+                                }
+                                .skeleton-title { width: 60%; height: 22px; }
+                                .skeleton-skill { width: 50%; }
+                                .skeleton-skill.short { width: 30%; }
+                                .skeleton-lang { width: 40%; }
+                                .skeleton-exp { width: 50%; }
+                                .skeleton-btn { width: 70%; height: 28px; margin-top: 18px; }
+                                @keyframes skeleton-loading {
+                                    0% { background-position: -200px 0; }
+                                    100% { background-position: calc(200px + 100%) 0; }
+                                }
                             .skill-badge {
                                 display: inline-block;
                                 background: #e3e7ff;
@@ -529,7 +631,9 @@
                                 margin: 2px 4px 2px 0;
                                 font-weight: 500;
                                 letter-spacing: 0.02em;
+                                cursor: pointer;
                             }
+                            .skill-more { background: #d1c4e9; color: #5e35b1; }
                         </style>
                         <p class="language">${languages}</p>
                         <p class="experience"><i class="fas fa-briefcase"></i> ${exp} Years Experience</p>
@@ -573,10 +677,54 @@
                     return;
                 }
 
-                if (loadingEl) loadingEl.style.display = 'none';
-                if (errorEl) errorEl.style.display = 'none';
+                setTimeout(() => {
+                    if (loadingEl) loadingEl.style.display = 'none';
+                    if (errorEl) errorEl.style.display = 'none';
 
-                gridEl.innerHTML = items.map(renderCard).join('');
+                    gridEl.innerHTML = items.map((a, idx) => renderCard(a, idx)).join('');
+
+                    // Add click event for skill-more
+                    setTimeout(() => {
+                        document.querySelectorAll('.skill-more').forEach(el => {
+                            el.addEventListener('click', function(e) {
+                                const parent = el.closest('.skills');
+                                if (!parent) return;
+                                // Hide shown skills and +others, show all-skills
+                                parent.querySelectorAll('.skill-badge:not(.skill-more)').forEach(s => s.style.display = 'none');
+                                el.style.display = 'none';
+                                const allSkills = parent.querySelector('.all-skills');
+                                if (allSkills) {
+                                    allSkills.classList.remove('d-none');
+                                    allSkills.style.display = 'inline';
+                                }
+                            });
+                        });
+                    }, 100);
+
+                    // Reference: Product carousel initialization
+                    if (window.jQuery && typeof window.jQuery.fn.owlCarousel === 'function') {
+                        var $carousel = window.jQuery('.astrologers-carousel');
+                        // Destroy if already initialized
+                        if ($carousel.hasClass('owl-loaded')) {
+                            $carousel.trigger('destroy.owl.carousel');
+                            $carousel.removeClass('owl-loaded owl-hidden');
+                            $carousel.find('.owl-stage-outer').children().unwrap();
+                        }
+                        $carousel.owlCarousel({
+                            loop: true,
+                            margin: 20,
+                            nav: true,
+                            dots: false,
+                            responsive: {
+                                0: { items: 1 },
+                                600: { items: 2 },
+                                1000: { items: 3 }
+                            }
+                        });
+                    } else {
+                        console.warn('Owl Carousel is not loaded.');
+                    }
+                }, 1200); // 1.2 seconds delay for skeleton
 
                 // Reference: Product carousel initialization
                 if (window.jQuery && typeof window.jQuery.fn.owlCarousel === 'function') {
