@@ -30320,7 +30320,7 @@ nav a.active {
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .btn-secondary {
@@ -31313,7 +31313,7 @@ label {
 input,
 select,
 textarea {
-  width: 100%;
+  /* width: 100%; */
   padding: 12px 14px;
   border-radius: 10px;
   font-size: 14px;
@@ -32919,7 +32919,7 @@ aside.course-card {
   display: block;
 }
 
-.info-cards-section .card {min-height: 484px;}
+.info-cards-section .card {min-height: 520px;}
 
 div#astrologersGrid {display: flex;gap: 20px;}
 .skills span.skill-badge {width: 100%;text-align: center;font-size: 11px !important;}
