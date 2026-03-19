@@ -35,4 +35,12 @@ return [
         ],
     ],
 
+    // Astro API integration
+    'astro_api' => [
+        'base_url' => env('ASTRO_API_BASE_URL', 'https://admin.astrorajumaharaj.com/api/v1/'),
+        'token' => env('ASTRO_API_TOKEN'),
+        'timeout' => env('ASTRO_API_TIMEOUT', 10),
+        'retries' => env('ASTRO_API_RETRIES', 2),
+        'retry_delay' => env('ASTRO_API_RETRY_DELAY', 200),
+    ],
 ];
