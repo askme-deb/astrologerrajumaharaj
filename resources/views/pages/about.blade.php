@@ -62,8 +62,15 @@
                <img src="{{ asset('assets/images/vition.png') }}" class="img-fluid rounded" alt="mition">
                <h3>Our Mission</h3>
                <p>
-                  To provide compassionate, high-quality home health care that
-                  enhances well-being, independence, and peace of mind.
+                 Our mission is to provide honest, accurate, and meaningful astrology services that truly make a difference in people’s lives.
+We are committed to:
+<ul class="commitment-list" style="list-style: none; padding-left: 0;">
+   <li>✔ Delivering personalized guidance based on Kundli analysis</li>
+   <li>✔ Offering practical remedies rooted in Vedic traditions</li>
+   <li>✔ Making astrology simple, accessible, and trustworthy</li>
+   <li>✔ Supporting individuals in overcoming life challenges</li>
+</ul>
+Through our services, we aim to bring clarity, positivity, and transformation.
                </p>
             </div>
             <hr>
@@ -71,8 +78,8 @@
                <img src="{{ asset('assets/images/mition.png') }}" class="img-fluid rounded" alt="mition">
                <h3>Our Vision</h3>
                <p>
-                  To be a trusted leader in home health care services by delivering
-                  personalized care solutions that empower individuals and families.
+                  To become a trusted source of authentic Vedic astrology guidance, helping individuals gain clarity, confidence, and direction in life.
+We envision empowering people to make better decisions through accurate Kundli analysis, spiritual wisdom, and practical solutions, creating a balanced and successful life.
                </p>
             </div>
          </div>

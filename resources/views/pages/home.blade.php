@@ -14,10 +14,18 @@
       <img src="{{ asset('assets/images/banner/banner-1.jpg') }}" alt="">
       <img src="{{ asset('assets/images/banner/banner-2.jpg') }}" alt="">
       <img src="{{ asset('assets/images/banner/banner-3.jpg') }}" alt="">
+      <img src="{{ asset('assets/images/banner/banner3.jpg') }}" alt="">
    </div>
    <div class="banner-content">
-      <h1>Your Future Begins with the Right Guidance</h1>
-      <p>Talk to experienced astrologers for clarity in love, career, health, and finances—anytime, anywhere.</p>
+      <h2>Seek Guidance from Astrologer Raju Maharaj Ji</h2>
+      <div>Get guidance for:</div>
+      <ul class="guidance-list" style="list-style: none; padding-left: 0;">
+         <li>✔ Health & Illness</li>
+         <li>✔ Career & Business</li>
+         <li>✔ Marriage & Relationships</li>
+         <li>✔ Finance & Life Decisions</li>
+      </ul>
+      <p>Experience authentic Vedic astrology with practical remedies that bring clarity and direction to your life.</p>
       <a href="https://jyotish.astrorajumaharaj.com/raju-maharaj" class="btn">Get an Appointment</a>
    </div>
 </section>
@@ -32,15 +40,24 @@
                </div>
                <h3>Consultation</h3>
                <p>
-                  Get personalized guidance and expert advice tailored to your needs
-                  through our professional consultation services.
+                 Professional Astrology Consultation
+Get personalized guidance and accurate Kundli analysis from experienced astrologers.
+Whether you are facing challenges in health, career, business, finance, marriage, or personal life, our experts provide clear insights and practical solutions based on Vedic astrology.
+<ul class="consultation-list" style="list-style: none; padding-left: 0;">
+   <li>✔ Detailed Kundli Analysis</li>
+   <li>✔ Personalized Remedies & Guidance</li>
+   <li>✔ Career, Business & Financial Advice</li>
+   <li>✔ Marriage & Relationship Solutions</li>
+</ul>
+Make informed life decisions with the right guidance.
+      Available All Week
                </p>
                <div class="card-footer">
-                  <div class="schedule">
+                  <!-- <div class="schedule">
                      <span>M T W T F S S</span>
                      <small>Available All Week</small>
-                  </div>
-                  <a href="https://jyotish.astrorajumaharaj.com" class="card-btn">Learn More</a>
+                  </div> -->
+                  <a href="https://jyotish.astrorajumaharaj.com/consultation" class="card-btn"> Book Consultation</a>
                </div>
             </div>
          </div>
@@ -52,15 +69,24 @@
                </div>
                <h3>Online Classes</h3>
                <p>
-                  Join our interactive online classes to learn from experts and
-                  enhance your knowledge from the comfort of your home.
+                  Learn Astrology from Experts
+Join our structured and interactive astrology courses designed for all levels — from beginners to advanced learners.
+Gain practical knowledge of Kundli reading, planetary analysis, and real-life case studies, guided by experienced mentors.
+<ul class="classes-list" style="list-style: none; padding-left: 0;">
+   <li>✔ Beginner to Advanced Courses</li>
+   <li>✔ Live Interactive Sessions</li>
+   <li>✔ Practical Kundli Analysis Training</li>
+   <li>✔ Certification & Skill Development</li>
+</ul>
+Start your journey into the world of astrology and build your expertise.
+    Flexible Timings
                </p>
                <div class="card-footer">
-                  <div class="schedule">
+                  <!-- <div class="schedule">
                      <span>M T W T F S S</span>
                      <small>Flexible Timings</small>
-                  </div>
-                  <a href="#" class="card-btn">Learn More</a>
+                  </div> -->
+                  <a href="#" class="card-btn">Join Classes</a>
                </div>
             </div>
          </div>
@@ -72,15 +98,23 @@
                </div>
                <h3>Products</h3>
                <p>
-                  Explore our wide range of authentic products designed to support
-                  your journey and improve your lifestyle.
+                 Authentic Spiritual & Astrology Products
+Explore a curated range of high-quality spiritual and astrology products designed to support your life journey.
+All products are selected based on astrological principles to enhance positivity, balance energies, and support your goals.
+<ul class="products-list" style="list-style: none; padding-left: 0;">
+   <li>✔ Natural Gemstones</li>
+   <li>✔ Energized Yantras & Puja Items</li>
+   <li>✔ Astrology Tools & Books</li>
+</ul>
+Choose the right products to align your energy and improve your lifestyle.
+      Shop Anytime
                </p>
                <div class="card-footer">
-                  <div class="schedule">
+                  <!-- <div class="schedule">
                      <span>M T W T F S S</span>
                      <small>Shop Anytime</small>
-                  </div>
-                  <a href="https://shop.astrorajumaharaj.com/" class="card-btn">Learn More</a>
+                  </div> -->
+                  <a href="https://shop.astrorajumaharaj.com/" class="card-btn">Explore Products</a>
                </div>
             </div>
          </div>
@@ -106,11 +140,43 @@
                            <h3>{{ $astrologer['name'] ?? 'Astrologer Name' }}</h3>
                            <div class="nhgd">
                               @if(!empty($astrologer['skills']) && is_array($astrologer['skills']))
-                                 @foreach($astrologer['skills'] as $skill)
-                                    <span class="skill-badge">{{ $skill }}</span>
-                                 @endforeach
+                                 @php
+                                    $skills = $astrologer['skills'];
+                                    $displayCount = 2;
+                                    $totalSkills = count($skills);
+                                    $uniqueId = 'skills_' . ($astrologer['id'] ?? uniqid());
+                                 @endphp
+                                 <span id="{{ $uniqueId }}_skills_short">
+                                    @foreach(array_slice($skills, 0, $displayCount) as $skill)
+                                       <span class="skill-badge">{{ $skill }}</span>
+                                    @endforeach
+                                    @if($totalSkills > $displayCount)
+                                       <span class="skill-badge show-more-btn" style="cursor:pointer;" onclick="toggleSkills('{{ $uniqueId }}', true)">+{{ $totalSkills - $displayCount }} more</span>
+                                    @endif
+                                 </span>
+                                 <span id="{{ $uniqueId }}_skills_full" style="display:none;">
+                                    @foreach($skills as $skill)
+                                       <span class="skill-badge">{{ $skill }}</span>
+                                    @endforeach
+                                    <span class="skill-badge show-less-btn" style="cursor:pointer;" onclick="toggleSkills('{{ $uniqueId }}', false)">Show less</span>
+                                 </span>
                               @endif
                            </div>
+                           @push('scripts')
+                           <script>
+                              function toggleSkills(id, showAll) {
+                                 var shortEl = document.getElementById(id + '_skills_short');
+                                 var fullEl = document.getElementById(id + '_skills_full');
+                                 if (showAll) {
+                                    shortEl.style.display = 'none';
+                                    fullEl.style.display = '';
+                                 } else {
+                                    shortEl.style.display = '';
+                                    fullEl.style.display = 'none';
+                                 }
+                              }
+                           </script>
+                           @endpush
                            <p class="language">
                               @if(!empty($astrologer['languages']) && is_array($astrologer['languages']))
                                  {{ implode(', ', $astrologer['languages']) }}
@@ -170,10 +236,12 @@
                            <div class="offer">
                               @if(!empty($product['discount_rate']) && $product['discount_rate'] > 0)
                                  {{ $product['discount_rate'] }}% OFF
+                              @else
+                              &nbsp;
                               @endif
                            </div>
                            <div class="d-grid gap-2 mt-3">
-                              <button class="btn btn-cart" onclick="addToCart()">Add to Cart</button>
+                              <button class="btn btn-cart" onclick="window.location.href='https://shop.astrorajumaharaj.com/products/{{ $product['slug'] ?? '' }}'">Add to Cart</button>
                               <button class="btn btn-buy" onclick="window.location.href='https://shop.astrorajumaharaj.com/products/{{ $product['slug'] ?? '' }}'">Buy Now</button>
                            </div>
                         </div>
@@ -208,7 +276,9 @@
       <div class="container">
          <div class="sale-banner-placeholder">
             <div class="banner-content">
-               <h2>15% OFF <br> SUPER SALE</h2>
+               <h4>Special Offer on Astrology Products</h4>
+               <p>Authentic Gemstones, Yantras & Spiritual Remedies</p>
+               <p>Carefully selected and energized products to support your health, career, relationships, and financial growth</p>
                <button>ORDER NOW</button>
             </div>
          </div>
@@ -657,24 +727,31 @@
                <div class="info-card">
                   <div class="label">Our Vision</div>
                   <p>
-                     Fusce sed pellentesque dui. Nunc lacinia, nibh vitae gravida
-                     condimentum, turpis neque commodo mauris, id rutrum lacus nisl a risus.
+                     To become a trusted source of authentic Vedic astrology guidance, helping individuals gain clarity, confidence, and direction in life.
+We envision empowering people to make better decisions through accurate Kundli analysis, spiritual wisdom, and practical solutions, creating a balanced and successful life.
                   </p>
                </div>
 
                <div class="info-card">
                   <div class="label">Our Mission</div>
                   <p>
-                     Our vision is to become a trusted leader in our industry by continuously improving our services and
-                     embracing new technologies. We aim to inspire growth, creativity, and positive change for our
-                     clients and communities. </p>
+                      Our mission is to provide honest, accurate, and meaningful astrology services that truly make a difference in people’s lives.
+                  We are committed to:
+                  <ul class="commitment-list" style="list-style: none; padding-left: 0;">
+                     <li>✔ Delivering personalized guidance based on Kundli analysis</li>
+                     <li>✔ Offering practical remedies rooted in Vedic traditions</li>
+                     <li>✔ Making astrology simple, accessible, and trustworthy</li>
+                     <li>✔ Supporting individuals in overcoming life challenges</li>
+                  </ul>
+Through our services, we aim to bring clarity, positivity, and transformation. </p>
                </div>
 
                <div class="info-card dark">
-                  <div class="label">Our History</div>
+                  <div class="label">Our Journey</div>
                   <p>
-                     Astrologer Raju Maharaj is a highly respected and experienced Vedic astrologer, known for his deep
-                     knowledge of astrology, horoscope analysis, and spiritual guidance.
+                    Astrologer Raju Maharaj Ji is a highly respected and experienced Vedic astrologer, known for his deep knowledge of astrology, Kundli analysis, and spiritual guidance.
+With years of dedicated practice and study, he has helped individuals from different walks of life gain clarity and direction in areas such as health, career, marriage, business, and finances.
+His journey is rooted in traditional Vedic wisdom, combined with a practical approach to solving real-life problems. Through accurate analysis and meaningful remedies, he continues to guide people toward a more balanced and fulfilling life.
                   </p>
                </div>
 
@@ -692,7 +769,7 @@
                         About Me – Your Trusted Astrologer
                      </h2>
 
-                     <button class="contact-btn">Read More</button>
+                     <a href="{{ url('/about') }}" class="contact-btn">Read More</a>
 
                   </div>
 
@@ -711,9 +788,16 @@
          <div class="donation-banner" style="background-image: url('{{ asset('assets/images/donate-now-banner.png') }}');">
             <div class="donation-overlay"></div>
             <div class="donation-content">
-               <h2>Small Acts. Big Change.</h2>
-               <p>Join hands with us to support meaningful causes and create a brighter future.</p>
-               <a href="donation.php" class="donate-btn">Make a Donation</a>
+               <h4>Support Education. Change Lives.</h4>
+               <p>
+An Initiative by Astrologer Raju Maharaj Ji
+Your contribution can help provide education, resources, and a better future for underprivileged children.
+Even a small step from you can create a big positive impact in someone’s life.
+
+<br>Support Our School Initiative
+</p>
+
+               <a href="donation.php" class="donate-btn" style="margin-bottom: 38px;">Make a Donation</a>
             </div>
          </div>
       </div>

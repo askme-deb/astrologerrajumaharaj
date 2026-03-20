@@ -24,10 +24,10 @@
                 <h5>Quick Links</h5>
                 <a href="javascript:;">Chat with Astrologer</a>
                 <a href="javascript:;">Astrologer</a>
-                <a href="javascript:;">Tarot Readers</a>
-                <a href="javascript:;">Numerologist</a>
+                <!-- <a href="javascript:;">Tarot Readers</a> -->
+                <!-- <a href="javascript:;">Numerologist</a> -->
                 <a href="javascript:;">Vastu Experts</a>
-                <a href="javascript:;">Fengshui Astrologer</a>
+                <!-- <a href="javascript:;">Fengshui Astrologer</a> -->
                 <a href="javascript:;">Financial Astrologer</a>
                 <a href="javascript:;">Marriage Astrologer</a>
                 <a href="javascript:;">Free Astrology Consultation</a>
