@@ -403,7 +403,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <li><i class="fas fa-check text-success me-2"></i> Certification included</li>
                      </ul>
                      <div class="d-flex justify-content-between align-items-center mt-4">
-                        <h4 class="mb-0">Rs.199</h4>
+                        <h4 class="mb-0"><Rs class="19999"></Rs></h4>
                         <button class="btn btn-dark">Enroll Now</button>
                      </div>
                   </div>
@@ -429,7 +429,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <li><i class="fas fa-check text-success me-2"></i> Certification included</li>
                      </ul>
                      <div class="d-flex justify-content-between align-items-center mt-4">
-                        <h4 class="mb-0">Rs.199</h4>
+                        <h4 class="mb-0"><Rs class="19999"></Rs></h4>
                         <button class="btn btn-dark">Enroll Now</button>
                      </div>
                   </div>
@@ -455,7 +455,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <li><i class="fas fa-check text-success me-2"></i> Certification included</li>
                      </ul>
                      <div class="d-flex justify-content-between align-items-center mt-4">
-                        <h4 class="mb-0">Rs.199</h4>
+                        <h4 class="mb-0"><Rs class="19999"></Rs></h4>
                         <button class="btn btn-dark">Enroll Now</button>
                      </div>
                   </div>
