@@ -38,15 +38,12 @@
                 <a href="javascript:;">About Us</a>
                 <a href="javascript:;">Contact Us</a>
                 <!-- <a href="javascript:;">Astrologer Registration</a> -->
-                <a href="javascript:;">Partner Us</a>
                 <a href="javascript:;">Career</a>
                 <a href="javascript:;">Site Map</a>
                 <a href="javascript:;">Karma &amp; Destiny</a>
                 <a href="javascript:;">Refund Policy</a>
-               
                 <a href="javascript:;">Shipping Policy</a>
-                <a href="javascript:;">Astroyogi Academy</a>
-                <a href="javascript:;">Media Coverage</a>
+            
              
             </div>
             <div class="col-lg-3 col-md-6 mb-4">

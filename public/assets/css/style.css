@@ -35336,18 +35336,6 @@ section.hero-section.gtrz {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ===== SLIDER ===== */
 
 .inner_banner .hero-slider{
@@ -36312,9 +36300,9 @@ span.date {
 }
 
 .logo_foot img {
-	width: 110px;
-	background: #fff;
-	border-radius: 100%;
+	width: 250px;
+	/* background: #fff;
+	border-radius: 100%; */
 }
 
 
