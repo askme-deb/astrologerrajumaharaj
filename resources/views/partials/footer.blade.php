@@ -60,28 +60,26 @@
         <section class="payment-section">
             <div class="container">
                 <ul class="payment-icons">
-                    <li><img src="https://imgcdn1.gempundit.com/media/wysiwyg/visa.svg" alt="Visa"></li>
-                    <li><img src="https://imgcdn1.gempundit.com/media/wysiwyg/mastercard.svg" alt="Mastercard"></li>
-                    <li><img src="https://imgcdn1.gempundit.com/media/wysiwyg/PayPal.svg" alt="PayPal"></li>
-                    <li><img src="https://imgcdn1.gempundit.com/media/wysiwyg/Netbanking__.svg" alt="Net Banking"></li>
-                    <li><img src="https://imgcdn1.gempundit.com/media/wysiwyg/american-express.svg" alt="American Express"></li>
-                    <li><img src="https://imgcdn1.gempundit.com/media/wysiwyg/rupay.png" alt="RuPay"></li>
-                    <li><img src="https://imgcdn1.gempundit.com/media/wysiwyg/Bhim.svg" alt="BHIM UPI"></li>
+                    <li><img src="{{ asset('assets/images/payments/maestro.svg') }}" alt="Visa"></li>
+                    <li><img src="{{ asset('assets/images/payments/mastercard.png') }}" alt="Mastercard"></li>
+                    <li><img src="{{ asset('assets/images/payments/razorpay.svg') }}" alt="Net Banking"></li>
+                    <li><img src="{{ asset('assets/images/payments/rupay.png') }}" alt="American Express"></li>
+                    <li><img src="{{ asset('assets/images/payments/visa.svg') }}" alt="RuPay"></li>
                     <li class="custom-option">
                         <a href="javascript:;">
-                            <img src="https://imgcdn1.gempundit.com/media/wysiwyg/footer-icon1.svg" alt="">
+                            <img src="{{ asset('assets/images/payments/footer-icon1.svg') }}" alt="">
                             <span>Cash on Delivery</span>
                         </a>
                     </li>
                     <li class="custom-option">
                         <a href="javascript:;">
-                            <img src="https://imgcdn1.gempundit.com/media/wysiwyg/footer-icon2.svg" alt="">
+                            <img src="{{ asset('assets/images/payments/footer-icon2.svg') }}" alt="">
                             <span>Lab Certified</span>
                         </a>
                     </li>
                     <li class="custom-option">
                         <a href="javascript:;">
-                            <img src="https://imgcdn1.gempundit.com/media/wysiwyg/footer-icon3.svg" alt="">
+                            <img src="{{ asset('assets/images/payments/footer-icon3.svg') }}" alt="">
                             <span>Easy Returns</span>
                         </a>
                     </li>
