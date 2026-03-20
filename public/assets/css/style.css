@@ -506,7 +506,7 @@ nav a.active {
 
 .astro-image img {
 	width: 80px;
-	height: 80px;
+	height: 130px;
 	border-radius: 50%;
 	object-fit: cover;
 	border: 3px solid #333355;
@@ -669,7 +669,7 @@ nav a.active {
 
 .sale-banner-placeholder {
 	/* Creating a placeholder gradient since image was missing */
-	background-image: url("images/20%\ super\ sale\ banner.png ");
+	background-image: url("images/discount_banner.jpeg");
 	height: 180px;
 	border-radius: 10px;
 	display: flex;
@@ -4243,7 +4243,7 @@ nav a.active {
 
 .sale-banner-placeholder {
 	/* Creating a placeholder gradient since image was missing */
-	background-image: url("images/20%\ super\ sale\ banner.png ");
+	background-image: url("images/discount_banner.jpeg");
 	height: 270px;
 	border-radius: 10px;
 	display: flex;
@@ -8212,7 +8212,7 @@ nav a.active {
 
 .sale-banner-placeholder {
 	/* Creating a placeholder gradient since image was missing */
-	background-image: url("images/20%\ super\ sale\ banner.png ");
+	background-image: url("images/discount_banner.jpeg");
 	height: 180px;
 	border-radius: 10px;
 	display: flex;
@@ -11787,7 +11787,7 @@ nav a.active {
 
 .sale-banner-placeholder {
 	/* Creating a placeholder gradient since image was missing */
-	background-image: url("../images/super-sale-banner.png ");
+	background-image: url("../images/discount_banner.jpeg ");
 	height: 270px;
 	border-radius: 10px;
 	display: flex;
@@ -15918,7 +15918,7 @@ nav a.active {
 
 .sale-banner-placeholder {
 	/* Creating a placeholder gradient since image was missing */
-	background-image: url("images/20%\ super\ sale\ banner.png ");
+	background-image: url("images/discount_banner.jpeg");
 	height: 180px;
 	border-radius: 10px;
 	display: flex;
@@ -19492,7 +19492,7 @@ nav a.active {
 
 .sale-banner-placeholder {
 	/* Creating a placeholder gradient since image was missing */
-	background-image: url("images/20%\ super\ sale\ banner.png ");
+	background-image: url("images/discount_banner.jpeg ");
 	height: 270px;
 	border-radius: 10px;
 	display: flex;
@@ -23461,7 +23461,7 @@ nav a.active {
 
 .sale-banner-placeholder {
 	/* Creating a placeholder gradient since image was missing */
-	background-image: url("images/20%\ super\ sale\ banner.png ");
+	background-image: url("images/discount_banner ");
 	height: 180px;
 	border-radius: 10px;
 	display: flex;
@@ -27038,7 +27038,7 @@ nav a.active {
 
 .sale-banner-placeholder {
 	/* Creating a placeholder gradient since image was missing */
-	background-image: url("../images/super-sale-banner.png ");
+	background-image: url("../images/discount_banner.jpeg ");
 	height: 270px;
 	border-radius: 10px;
 	display: flex;
@@ -30232,11 +30232,12 @@ color: #ffaa00;
 }
 
 .sale-banner-placeholder:after {
-	content: "";
-	position: absolute;
-	background: transparent;
-	width: 100%;
-	height: 100%;
+content: "";
+    position: absolute;
+    background: #00000052;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 
@@ -32234,7 +32235,7 @@ blockquote {
 }
 
 .astro-image img {
-	height: 100px;
+	height: 135px;
 	width: 100px !important;
 }
 
@@ -33291,8 +33292,8 @@ input {
 span.skill-badge {
 	background: #f98b3557;
 	border-radius: 5px;
-	font-size: 12px;
-	padding: 2px 8px;
+	font-size: 10px;
+	padding: 2px 5px;
 	color: #000000;
 	font-family: "Lato", sans-serif;
 }
