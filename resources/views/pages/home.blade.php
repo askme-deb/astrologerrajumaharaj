@@ -765,11 +765,11 @@ His journey is rooted in traditional Vedic wisdom, combined with a practical app
 
                   <div class="image-content">
 
-                     <h2>
+                     <!-- <h2>
                         About Me – Your Trusted Astrologer
                      </h2>
 
-                     <a href="{{ url('/about') }}" class="contact-btn">Read More</a>
+                     <a href="{{ url('/about') }}" class="contact-btn">Read More</a> -->
 
                   </div>
 
