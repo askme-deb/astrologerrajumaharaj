@@ -237,26 +237,26 @@
 
    <script>
       $(document).ready(function () {
-         $('.courses-carousel').owlCarousel({
-            loop: true,
-            margin: 20,
-            nav: true,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 4000,
-            smartSpeed: 900,
-            responsive: {
-               0: {
-                  items: 1
-               },
-               576: {
-                  items: 2
-               },
-               992: {
-                  items: 4
-               }
-            }
-         });
+         // $('.courses-carousel').owlCarousel({
+         //    loop: true,
+         //    margin: 20,
+         //    nav: true,
+         //    dots: false,
+         //    autoplay: true,
+         //    autoplayTimeout: 4000,
+         //    smartSpeed: 900,
+         //    responsive: {
+         //       0: {
+         //          items: 1
+         //       },
+         //       576: {
+         //          items: 2
+         //       },
+         //       992: {
+         //          items: 4
+         //       }
+         //    }
+         // });
       });
    </script>
 
