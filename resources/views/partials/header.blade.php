@@ -13,7 +13,7 @@
                 <div class="account_warp">
                     <div class="marquee-container">
                         <div class="marquee-text">
-                            Welcome to Our Website | Latest Updates Available | Contact Us Today | Special Offer Running Now
+                            Welcome to Astro Raju Maharaj Ji | Book Your Consultation Today | Learn Vedic Astrology | Explore Authentic Astrology Products
                         </div>
                     </div>
                 </div>

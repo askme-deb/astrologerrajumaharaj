@@ -131,75 +131,77 @@ Choose the right products to align your energy and improve your lifestyle.
             <div class="owl-carousel owl-theme">
                @if(!empty($astrologers['data']) && is_array($astrologers['data']))
                   @foreach($astrologers['data'] as $astrologer)
-                  <div class="banner-item">
-                     <div class="astro-card">
-                        <div class="astro-image">
-                           <img src="{{ $astrologer['image_url'] ?? asset('assets/images/top 1 astrologer.png') }}" alt="{{ $astrologer['name'] ?? 'Astrologer' }}">
-                        </div>
-                        <div class="astro-info">
-                           <h3>{{ $astrologer['name'] ?? 'Astrologer Name' }}</h3>
-                           <div class="nhgd">
-                              @if(!empty($astrologer['skills']) && is_array($astrologer['skills']))
-                                 @php
-                                    $skills = $astrologer['skills'];
-                                    $displayCount = 2;
-                                    $totalSkills = count($skills);
-                                    $uniqueId = 'skills_' . ($astrologer['id'] ?? uniqid());
-                                 @endphp
-                                 <span id="{{ $uniqueId }}_skills_short">
-                                    @foreach(array_slice($skills, 0, $displayCount) as $skill)
-                                       <span class="skill-badge">{{ $skill }}</span>
-                                    @endforeach
-                                    @if($totalSkills > $displayCount)
-                                       <span class="skill-badge show-more-btn" style="cursor:pointer;" onclick="toggleSkills('{{ $uniqueId }}', true)">+{{ $totalSkills - $displayCount }} more</span>
-                                    @endif
-                                 </span>
-                                 <span id="{{ $uniqueId }}_skills_full" style="display:none;">
-                                    @foreach($skills as $skill)
-                                       <span class="skill-badge">{{ $skill }}</span>
-                                    @endforeach
-                                    <span class="skill-badge show-less-btn" style="cursor:pointer;" onclick="toggleSkills('{{ $uniqueId }}', false)">Show less</span>
-                                 </span>
-                              @endif
+                     @if(($astrologer['name'] ?? '') !== 'Raju Maharaj')
+                     <div class="banner-item">
+                        <div class="astro-card">
+                           <div class="astro-image">
+                              <img src="{{ $astrologer['image_url'] ?? asset('assets/images/top 1 astrologer.png') }}" alt="{{ $astrologer['name'] ?? 'Astrologer' }}">
                            </div>
-                           @push('scripts')
-                           <script>
-                              function toggleSkills(id, showAll) {
-                                 var shortEl = document.getElementById(id + '_skills_short');
-                                 var fullEl = document.getElementById(id + '_skills_full');
-                                 if (showAll) {
-                                    shortEl.style.display = 'none';
-                                    fullEl.style.display = '';
-                                 } else {
-                                    shortEl.style.display = '';
-                                    fullEl.style.display = 'none';
+                           <div class="astro-info">
+                              <h3>{{ $astrologer['name'] ?? 'Astrologer Name' }}</h3>
+                              <div class="nhgd">
+                                 @if(!empty($astrologer['skills']) && is_array($astrologer['skills']))
+                                    @php
+                                       $skills = $astrologer['skills'];
+                                       $displayCount = 2;
+                                       $totalSkills = count($skills);
+                                       $uniqueId = 'skills_' . ($astrologer['id'] ?? uniqid());
+                                    @endphp
+                                    <span id="{{ $uniqueId }}_skills_short">
+                                       @foreach(array_slice($skills, 0, $displayCount) as $skill)
+                                          <span class="skill-badge">{{ $skill }}</span>
+                                       @endforeach
+                                       @if($totalSkills > $displayCount)
+                                          <span class="skill-badge show-more-btn" style="cursor:pointer;" onclick="toggleSkills('{{ $uniqueId }}', true)">+{{ $totalSkills - $displayCount }} more</span>
+                                       @endif
+                                    </span>
+                                    <span id="{{ $uniqueId }}_skills_full" style="display:none;">
+                                       @foreach($skills as $skill)
+                                          <span class="skill-badge">{{ $skill }}</span>
+                                       @endforeach
+                                       <span class="skill-badge show-less-btn" style="cursor:pointer;" onclick="toggleSkills('{{ $uniqueId }}', false)">Show less</span>
+                                    </span>
+                                 @endif
+                              </div>
+                              @push('scripts')
+                              <script>
+                                 function toggleSkills(id, showAll) {
+                                    var shortEl = document.getElementById(id + '_skills_short');
+                                    var fullEl = document.getElementById(id + '_skills_full');
+                                    if (showAll) {
+                                       shortEl.style.display = 'none';
+                                       fullEl.style.display = '';
+                                    } else {
+                                       shortEl.style.display = '';
+                                       fullEl.style.display = 'none';
+                                    }
                                  }
-                              }
-                           </script>
-                           @endpush
-                           <p class="language">
-                              @if(!empty($astrologer['languages']) && is_array($astrologer['languages']))
-                                 {{ implode(', ', $astrologer['languages']) }}
-                              @else
-                                 {{ $astrologer['languages'] ?? '' }}
-                              @endif
-                           </p>
-                           <div class="astro-meta mb-2">
-                              <span class="me-2"><i class="fas fa-briefcase"></i> {{ $astrologer['experience'] ?? '0' }} yrs exp</span>
-                              <span class="me-2"><i class="fas fa-clock"></i> {{ $astrologer['duration'] ?? '0' }} min</span>
-                              <span><i class="fas fa-rupee-sign"></i> ₹{{ $astrologer['rate'] ?? '0' }}</span>
-                           </div>
-                           <div class="astro-actions">
-                              <a href="https://jyotish.astrorajumaharaj.com/consultant/{{ $astrologer['id'] ?? '' }}" class="btn btn-success btn-appointment">
-                                 <i class="fas fa-calendar-check"></i> Get an Appointment
-                              </a>
-                           </div>
-                           <div class="rating">
-                              <i class="fas fa-star"></i> {{ $astrologer['rating'] ?? '4.5' }} | {{ $astrologer['reviews_count'] ?? '0' }} reviews
+                              </script>
+                              @endpush
+                              <p class="language">
+                                 @if(!empty($astrologer['languages']) && is_array($astrologer['languages']))
+                                    {{ implode(', ', $astrologer['languages']) }}
+                                 @else
+                                    {{ $astrologer['languages'] ?? '' }}
+                                 @endif
+                              </p>
+                              <div class="astro-meta mb-2">
+                                 <span class="me-2"><i class="fas fa-briefcase"></i> {{ $astrologer['experience'] ?? '0' }} yrs exp</span>
+                                 <span class="me-2"><i class="fas fa-clock"></i> {{ $astrologer['duration'] ?? '0' }} min</span>
+                                 <span><i class="fas fa-rupee-sign"></i> ₹{{ $astrologer['rate'] ?? '0' }}</span>
+                              </div>
+                              <div class="astro-actions">
+                                 <a href="https://jyotish.astrorajumaharaj.com/consultant/{{ $astrologer['id'] ?? '' }}" class="btn btn-success btn-appointment">
+                                    <i class="fas fa-calendar-check"></i> Get an Appointment
+                                 </a>
+                              </div>
+                              <div class="rating">
+                                 <i class="fas fa-star"></i> {{ $astrologer['rating'] ?? '4.5' }} | {{ $astrologer['reviews_count'] ?? '0' }} reviews
+                              </div>
                            </div>
                         </div>
                      </div>
-                  </div>
+                     @endif
                   @endforeach
                @else
                   <!-- Fallback static astrologer if $astrologers is empty -->
