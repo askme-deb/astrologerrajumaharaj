@@ -3,6 +3,16 @@
 @section('title', 'Blog')
 
 @section('content')
+<div class="about_rtp">
+
+<div class="container-fluid hero">
+      <img src="https://astrorajumaharaj.com/assets/images/product_25.png">
+      <div class="hero-text">
+         <h1>Blog</h1>
+         <div class="breadcrumb">Home / Blog</div>
+      </div>
+   </div>
+</div>
 <div class="blog_warpp">
 <section class="breadcrumb-section">
 <!-- <div class="container">
@@ -12,14 +22,14 @@
         <li class="active">Blog</li>
     </ul>
 </div> -->
- <div class="container-fluid hero">
+ <!-- <div class="container-fluid hero">
       <img src="{{ asset('assets/images/product_25.png') }}">
       <div class="hero-text">
          <h1>Blog</h1>
          <div class="breadcrumb">Home / Blog</div>
       </div>
    </div>
-</section>
+</section> -->
 <section class="section up_comingd">
 <div class="container">
     <h2 class="mb-4">Latest Blog Posts</h2>
