@@ -5,13 +5,20 @@
 @section('content')
 <div class="blog_warpp">
 <section class="breadcrumb-section">
-<div class="container">
+<!-- <div class="container">
     <h1>Unlock Your Destiny: What the Stars Reveal About Your Future</h1>
     <ul class="breadcrumb">
         <li><a href="/">Home</a></li>
         <li class="active">Blog</li>
     </ul>
-</div>
+</div> -->
+ <div class="container-fluid hero">
+      <img src="{{ asset('assets/images/product_25.png') }}">
+      <div class="hero-text">
+         <h1>Blog</h1>
+         <div class="breadcrumb">Home / Blog</div>
+      </div>
+   </div>
 </section>
 <section class="section up_comingd">
 <div class="container">

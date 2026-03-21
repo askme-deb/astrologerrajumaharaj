@@ -4,8 +4,15 @@
 
 @section('content')
 <section class="inner_banner">
-<div class="hero-slider">
-  <!-- Slide 1 -->
+     <div class="container-fluid hero">
+      <img src="{{ asset('assets/images/product_25.png') }}">
+      <div class="hero-text">
+         <h1>Gallery</h1>
+         <div class="breadcrumb">Home / Gallery</div>
+      </div>
+   </div>
+<!-- <div class="hero-slider">
+
   <div class="slide active">
     <img src="{{ asset('assets/images/banner/banner-1.jpg') }}" alt="">
     <div class="overlay"></div>
@@ -14,7 +21,7 @@
        <p>Home | Gallery</p>
     </div>
   </div>
-  <!-- Slide 2 -->
+
   <div class="slide">
     <img src="{{ asset('assets/images/banner/banner-2.jpg') }}" alt="">
     <div class="overlay"></div>
@@ -22,7 +29,7 @@
       <h1>Our Gallery</h1>
     </div>
   </div>
-  <!-- Slide 3 -->
+
   <div class="slide">
     <img src="{{ asset('assets/images/banner/banner-3.jpg') }}" alt="">
     <div class="overlay"></div>
@@ -33,7 +40,7 @@
   <div class="arrow left">&#10094;</div>
   <div class="arrow right">&#10095;</div>
   <div class="dots"></div>
-</div>
+</div> -->
 </section>
 <section class="section galary_warp">
 <div class="container">
