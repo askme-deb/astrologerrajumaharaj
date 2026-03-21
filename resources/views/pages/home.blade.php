@@ -288,100 +288,11 @@ Choose the right products to align your energy and improve your lifestyle.
       <div class="container">
          <div class="section-header">
             <div class="header-text">
-               <h2>Our Featured <span class="highlight-text">Courses</span></h2>
-               <p class="sub-heading">We Invite you</p>
+               <h2>Become a Skilled Vedic Astrologer <span class="highlight-text">Courses</span></h2>
+               <p class="sub-heading">Learn Kundli analysis with practical, real-world application</p>
             </div>
          </div>
-         <!-- 
-         <div class="courses-grid">
-            <div class="course-card" data-aos="fade-right">
-                 <div class="course-thumb">
-                     <img src="{{ asset('assets/images/courses post.png') }}" alt="Vedic Astrology Course">
-                 </div>
-                 <div class="course-body">
-                     <div class="stars text-yellow">
-                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                     </div>
-                     <h3>Learn Vedic Astrology</h3>
-                     <div class="instructor">
-                         <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
-                         <span>Astro Tungeesh</span>
-                     </div>
-                     <div class="course-footer">
-                         <button class="enroll-btn">Enroll Course</button>
-                     </div>
-                 </div>
-             </div>
          
-             <div class="course-card" data-aos="fade-up">
-                 <div class="course-thumb">
-                     <img src="images/courses post.png" alt="Vedic Astrology Course">
-                 </div>
-                 <div class="course-body">
-                     <div class="stars text-yellow">
-                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                     </div>
-                     <h3>Learn Vedic Astrology</h3>
-                     <div class="instructor">
-                         <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
-                         <span>Astro Tungeesh</span>
-                     </div>
-                     <div class="course-footer">
-                         <div class="course-price">
-                             <span>Rs. 1000/-</span>
-                             <small>Inclusive of 18% GST</small>
-                         </div>
-                         <button class="icon-btn-outline"><i class="fas fa-shopping-bag"></i></button>
-                     </div>
-                 </div>
-             </div>
-         
-             <div class="course-card" data-aos="fade-left">
-                 <div class="course-thumb">
-                     <img src="images/courses post.png" alt="Vedic Astrology Course">
-                 </div>
-                 <div class="course-body">
-                     <div class="stars text-yellow">
-                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                     </div>
-                     <h3>Learn Vedic Astrology</h3>
-                     <div class="instructor">
-                         <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
-                         <span>Astro Tungeesh</span>
-                     </div>
-                     <div class="course-footer">
-                          <div class="course-price">
-                             <span>Rs. 1000/-</span>
-                             <small>Inclusive of 18% GST</small>
-                         </div>
-                         <button class="icon-btn-outline"><i class="fas fa-shopping-bag"></i></button>
-                     </div>
-                 </div>
-             </div>
-             
-              <div class="course-card">
-                 <div class="course-thumb">
-                     <img src="images/courses post.png" alt="Vedic Astrology Course">
-                 </div>
-                 <div class="course-body">
-                     <div class="stars text-yellow">
-                         <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                     </div>
-                     <h3>Learn Vedic Astrology</h3>
-                     <div class="instructor">
-                         <div class="inst-icon"><i class="fas fa-user-circle"></i></div>
-                         <span>Astro Tungeesh</span>
-                     </div>
-                     <div class="course-footer">
-                          <div class="course-price">
-                             <span>Rs. 1000/-</span>
-                             <small>Inclusive of 18% GST</small>
-                         </div>
-                         <button class="icon-btn-outline"><i class="fas fa-shopping-bag"></i></button>
-                     </div>
-                 </div>
-             </div>
-         </div> -->
          <div class="owl-carousel owl-theme courses-carousel huwe">
             <div class="course-card" data-aos="fade-right">
                <div class="card h-100">
@@ -719,6 +630,11 @@ Choose the right products to align your energy and improve your lifestyle.
 
    <section class="about-section">
       <div class="container">
+           <div class="section-header-center">
+            <h2>A Journey of Wisdom, Guidance & Trust
+Astrologer Raju Maharaj Ji</h2>
+           
+         </div>
          <div class="row g-4">
 
             <!-- Left -->
