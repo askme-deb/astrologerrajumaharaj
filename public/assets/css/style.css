@@ -36418,13 +36418,13 @@ span.date {
 }
 
 .about_rtp .hero-text{
-    position:absolute;
-    bottom:30px;
-    right:30px;
-    background:white;
+   position: absolute;
+    bottom: 30px;
+    left: 18%;
+    background: white;
     padding: 15px 23px;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .about_rtp .hero-text h1{
