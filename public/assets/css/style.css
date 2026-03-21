@@ -36403,10 +36403,11 @@ span.date {
 /* HERO */
 
 .about_rtp .hero{
-    margin:40px auto;
-    position:relative;
-    border-radius:20px;
-    overflow:hidden;
+  margin: 0 auto;
+    position: relative;
+    border-radius: 0;
+    overflow: hidden;
+    padding: 0;
 }
 
 .about_rtp .hero img{
