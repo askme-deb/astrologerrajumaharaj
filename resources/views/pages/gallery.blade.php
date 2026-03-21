@@ -3,14 +3,16 @@
 @section('title', 'Gallery')
 
 @section('content')
-<section class="inner_banner">
-     <div class="container-fluid hero">
+<div class="container-fluid hero">
       <img src="{{ asset('assets/images/product_25.png') }}">
       <div class="hero-text">
          <h1>Gallery</h1>
          <div class="breadcrumb">Home / Gallery</div>
       </div>
    </div>
+</div>
+<section class="inner_banner">
+     
 <!-- <div class="hero-slider">
 
   <div class="slide active">
