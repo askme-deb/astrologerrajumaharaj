@@ -28630,7 +28630,7 @@ nav a.active {
 
 /* Donation Page */
 .donation-content {
-	display: grid;
+	display: block;
 	grid-template-columns: 1fr 1fr;
 	gap: 10px;
 	margin-top: 50px;
@@ -30196,7 +30196,7 @@ color: #ffaa00;
 
 .donation-content {
 	position: relative;
-	max-width: 700px;
+	max-width: 530px;
 	color: #fff;
 }
 
