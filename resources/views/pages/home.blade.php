@@ -11,10 +11,10 @@
 </style>
 <section class="banner">
    <div class="slider">
-      <img src="{{ asset('assets/images/banner/banner-1.jpg') }}" alt="">
-      <img src="{{ asset('assets/images/banner/banner-2.jpg') }}" alt="">
-      <img src="{{ asset('assets/images/banner/banner-3.jpg') }}" alt="">
-      <img src="{{ asset('assets/images/banner/banner3.jpg') }}" alt="">
+      <img src="{{ asset('assets/images/banner/banner-1.webp') }}" alt="">
+      <img src="{{ asset('assets/images/banner/banner-2.webp') }}" alt="">
+      <img src="{{ asset('assets/images/banner/banner-3.webp') }}" alt="">
+      <!-- <img src="{{ asset('assets/images/banner/banner3.webp') }}" alt=""> -->
    </div>
    <div class="banner-content">
       <h2>Seek Guidance from Astrologer Raju Maharaj Ji</h2>
