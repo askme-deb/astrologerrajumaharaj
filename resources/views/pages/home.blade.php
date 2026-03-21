@@ -36,22 +36,22 @@
          <div class="col-lg-4 col-md-6">
             <div class="service-card">
                <div class="card-icon">
-                  <img src="{{ asset('assets/images/cunsul.png') }}" alt="Consultation">
+                  <img src="{{ asset('assets/images/cunsul.webp') }}" alt="Consultation">
                </div>
                <h3>Consultation</h3>
                <p>
                  Professional Astrology Consultation
-Get personalized guidance and accurate Kundli analysis from experienced astrologers.
-Whether you are facing challenges in health, career, business, finance, marriage, or personal life, our experts provide clear insights and practical solutions based on Vedic astrology.
-<ul class="consultation-list" style="list-style: none; padding-left: 0;">
-   <li>✔ Detailed Kundli Analysis</li>
-   <li>✔ Personalized Remedies & Guidance</li>
-   <li>✔ Career, Business & Financial Advice</li>
-   <li>✔ Marriage & Relationship Solutions</li>
-</ul>
-Make informed life decisions with the right guidance.
-      Available All Week
-               </p>
+                  Get personalized guidance and accurate Kundli analysis from experienced astrologers.
+                  Whether you are facing challenges in health, career, business, finance, marriage, or personal life, our experts provide clear insights and practical solutions based on Vedic astrology.
+                  <ul class="consultation-list" style="list-style: none; padding-left: 0;">
+                     <li>✔ Detailed Kundli Analysis</li>
+                     <li>✔ Personalized Remedies & Guidance</li>
+                     <li>✔ Career, Business & Financial Advice</li>
+                     <li>✔ Marriage & Relationship Solutions</li>
+                  </ul>
+                  Make informed life decisions with the right guidance.
+                        Available All Week
+                                 </p>
                <div class="card-footer">
                   <!-- <div class="schedule">
                      <span>M T W T F S S</span>
@@ -65,21 +65,21 @@ Make informed life decisions with the right guidance.
          <div class="col-lg-4 col-md-6">
             <div class="service-card">
                <div class="card-icon">
-                  <img src="{{ asset('assets/images/class.png') }}" alt="Online Classes">
+                  <img src="{{ asset('assets/images/class.webp') }}" alt="Online Classes">
                </div>
                <h3>Online Classes</h3>
                <p>
                   Learn Astrology from Experts
-Join our structured and interactive astrology courses designed for all levels — from beginners to advanced learners.
-Gain practical knowledge of Kundli reading, planetary analysis, and real-life case studies, guided by experienced mentors.
-<ul class="classes-list" style="list-style: none; padding-left: 0;">
-   <li>✔ Beginner to Advanced Courses</li>
-   <li>✔ Live Interactive Sessions</li>
-   <li>✔ Practical Kundli Analysis Training</li>
-   <li>✔ Certification & Skill Development</li>
-</ul>
-Start your journey into the world of astrology and build your expertise.
-    Flexible Timings
+                        Join our structured and interactive astrology courses designed for all levels — from beginners to advanced learners.
+                        Gain practical knowledge of Kundli reading, planetary analysis, and real-life case studies, guided by experienced mentors.
+                        <ul class="classes-list" style="list-style: none; padding-left: 0;">
+                           <li>✔ Beginner to Advanced Courses</li>
+                           <li>✔ Live Interactive Sessions</li>
+                           <li>✔ Practical Kundli Analysis Training</li>
+                           <li>✔ Certification & Skill Development</li>
+                        </ul>
+                        Start your journey into the world of astrology and build your expertise.
+                           Flexible Timings
                </p>
                <div class="card-footer">
                   <!-- <div class="schedule">
@@ -94,7 +94,7 @@ Start your journey into the world of astrology and build your expertise.
          <div class="col-lg-4 col-md-6">
             <div class="service-card">
                <div class="card-icon">
-                  <img src="{{ asset('assets/images/products.png') }}" alt="Products">
+                  <img src="{{ asset('assets/images/products.webp') }}" alt="Products">
                </div>
                <h3>Products</h3>
                <p>
