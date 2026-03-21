@@ -5,7 +5,7 @@
 @section('content')
 <div class="about_rtp">
    <!-- HERO -->
-   <div class="container hero">
+   <div class="container-fluid hero">
       <img src="{{ asset('assets/images/product_25.png') }}">
       <div class="hero-text">
          <h1>About Us</h1>
