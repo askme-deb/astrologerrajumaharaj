@@ -37245,3 +37245,9 @@ section.hero-section.gtrz {display: block;background: none;}
 .gcdxsww {min-height: 980px;}
 .kundali-banner {  min-height: 400px;}
 }
+
+@media(max-width:1240px){
+.about_rtp .hero-text {
+    left: 4%;}
+
+}
