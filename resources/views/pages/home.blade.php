@@ -218,7 +218,7 @@ Choose the right products to align your energy and improve your lifestyle.
                <h2>Buy Gemstones <span class="highlight-text">Online</span></h2>
                <p class="sub-heading">Products Of Trusted Excellence</p>
             </div>
-            <a href="https://shop.astrorajumaharaj.com/products" class="view-all-btn">View All</a>
+            <a href="https://shop.astrorajumaharaj.com" class="view-all-btn">View All</a>
          </div>
          <div class="container my-2 mb-5 product_warp">
             <!-- Desktop Grid -->
@@ -269,7 +269,7 @@ Choose the right products to align your energy and improve your lifestyle.
                @endif
             </div>
             <div class="view-all">
-               <a href="https://shop.astrorajumaharaj.com/products">View All Products →</a>
+               <a href="https://shop.astrorajumaharaj.com">View All Products →</a>
             </div>
          </div>
       </div>
