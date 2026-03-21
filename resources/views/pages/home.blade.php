@@ -297,7 +297,7 @@ Choose the right products to align your energy and improve your lifestyle.
          <div class="courses-grid">
             <div class="course-card" data-aos="fade-right">
                  <div class="course-thumb">
-                     <img src="images/courses post.png" alt="Vedic Astrology Course">
+                     <img src="{{ asset('assets/images/course-1.webp') }}" alt="Vedic Astrology Course">
                  </div>
                  <div class="course-body">
                      <div class="stars text-yellow">
@@ -316,7 +316,7 @@ Choose the right products to align your energy and improve your lifestyle.
          
              <div class="course-card" data-aos="fade-up">
                  <div class="course-thumb">
-                     <img src="images/courses post.png" alt="Vedic Astrology Course">
+                     <img src="{{ asset('assets/images/course-2.webp') }}" alt="Vedic Astrology Course">
                  </div>
                  <div class="course-body">
                      <div class="stars text-yellow">
@@ -339,7 +339,7 @@ Choose the right products to align your energy and improve your lifestyle.
          
              <div class="course-card" data-aos="fade-left">
                  <div class="course-thumb">
-                     <img src="images/courses post.png" alt="Vedic Astrology Course">
+                     <img src="{{ asset('assets/images/course-3.webp') }}" alt="Vedic Astrology Course">
                  </div>
                  <div class="course-body">
                      <div class="stars text-yellow">
@@ -362,7 +362,7 @@ Choose the right products to align your energy and improve your lifestyle.
              
               <div class="course-card">
                  <div class="course-thumb">
-                     <img src="images/courses post.png" alt="Vedic Astrology Course">
+                     <img src="{{ asset('assets/images/course-4.webp') }}" alt="Vedic Astrology Course">
                  </div>
                  <div class="course-body">
                      <div class="stars text-yellow">
