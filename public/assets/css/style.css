@@ -36411,10 +36411,10 @@ span.date {
 }
 
 .about_rtp .hero img{
-    width:100%;
+	width: 100%;
     height: 55vh;
-    object-fit:cover;
-    border-radius: 20px;
+    object-fit: cover;
+    border-radius: 0;
 }
 
 .about_rtp .hero-text{
