@@ -59,7 +59,7 @@
          </div>
          <div class="mission-text">
             <div class="mission-box">
-               <img src="{{ asset('assets/images/vition.png') }}" class="img-fluid rounded" alt="mition">
+               <!-- <img src="{{ asset('assets/images/vition.png') }}" class="img-fluid rounded" alt="mition"> -->
                <h3>Our Mission</h3>
                <p>
                  Our mission is to provide honest, accurate, and meaningful astrology services that truly make a difference in people’s lives.
@@ -75,7 +75,7 @@ Through our services, we aim to bring clarity, positivity, and transformation.
             </div>
             <hr>
             <div class="mission-box">
-               <img src="{{ asset('assets/images/mition.png') }}" class="img-fluid rounded" alt="mition">
+               <!-- <img src="{{ asset('assets/images/mition.png') }}" class="img-fluid rounded" alt="mition"> -->
                <h3>Our Vision</h3>
                <p>
                   To become a trusted source of authentic Vedic astrology guidance, helping individuals gain clarity, confidence, and direction in life.
