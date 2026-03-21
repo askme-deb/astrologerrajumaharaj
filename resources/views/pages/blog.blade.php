@@ -6,7 +6,7 @@
 <div class="about_rtp">
 
 <div class="container-fluid hero">
-      <img src="https://astrorajumaharaj.com/assets/images/product_25.png">
+      <img src="{{ asset('assets/images/product_25.png') }}">
       <div class="hero-text">
          <h1>Blog</h1>
          <div class="breadcrumb">Home / Blog</div>
