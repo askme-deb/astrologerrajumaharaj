@@ -36507,11 +36507,12 @@ span.date {
     padding: 0px 25px;
 }
 
-.about_rtp .mission img{
-    width:100%;
-    border-radius:20px;
+.about_rtp .mission img {
+    width: 100%;
+    border-radius: 20px;
+    height: 500px;
+    object-fit: cover;
 }
-
 .about_rtp .mission-text{
     flex:1;
 }

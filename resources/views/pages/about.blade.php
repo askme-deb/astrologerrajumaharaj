@@ -55,7 +55,7 @@
    <section class="section container">
       <div class="mission">
          <div style="flex:1;">
-            <img src="{{ asset('assets/images/about_ttr.png') }}">
+            <img src="{{ asset('assets/images/about_ttr.webp') }}">
          </div>
          <div class="mission-text">
             <div class="mission-box">
