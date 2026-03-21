@@ -3,6 +3,8 @@
 @section('title', 'Gallery')
 
 @section('content')
+<div class="about_rtp">
+
 <div class="container-fluid hero">
       <img src="{{ asset('assets/images/product_25.png') }}">
       <div class="hero-text">
