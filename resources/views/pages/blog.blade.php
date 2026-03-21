@@ -14,7 +14,7 @@
    </div>
 </div>
 <div class="blog_warpp">
-<section class="breadcrumb-section">
+<!-- <section class="breadcrumb-section"> -->
 <!-- <div class="container">
     <h1>Unlock Your Destiny: What the Stars Reveal About Your Future</h1>
     <ul class="breadcrumb">
