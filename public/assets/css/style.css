@@ -37248,6 +37248,8 @@ section.hero-section.gtrz {display: block;background: none;}
 
 @media(max-width:1240px){
 .about_rtp .hero-text {
-    left: 4%;}
-
+	width: 200px;
+    left: 4%;
+}
+	
 }
