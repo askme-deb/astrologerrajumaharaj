@@ -640,7 +640,7 @@ Astrologer Raju Maharaj Ji</h2>
          <div class="row g-4">
 
             <!-- Left -->
-            <div class="col-lg-5">
+            <div class="col-lg-8">
 
                <div class="info-card">
                   <div class="label">Our Vision</div>
@@ -676,7 +676,7 @@ His journey is rooted in traditional Vedic wisdom, combined with a practical app
             </div>
 
             <!-- Right -->
-            <div class="col-lg-7">
+            <div class="col-lg-4">
                <div class="image-box">
 
                   <div class="image-overlay"></div>
