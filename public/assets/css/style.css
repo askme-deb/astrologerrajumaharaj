@@ -34046,10 +34046,10 @@ Specificity: (0,1,0)
 
         /* --- 4. Animation Class for Filtering --- */
         .grid-item.hide {
-            display: none; 
+            display: none;
             /* Note: We use display:none because simple opacity hide leaves gaps in masonry layout */
         }
-        
+
         .grid-item.show {
             animation: fadeIn 0.5s ease;
         }
@@ -35502,8 +35502,8 @@ section.hero-section.gtrz {
 
 .inner_banner .hero-slider {
     height: 20vh;
-}	
-	
+}
+
 }
 
 .fdcfre {
@@ -37251,5 +37251,129 @@ section.hero-section.gtrz {display: block;background: none;}
 	width: 200px;
     left: 4%;
 }
-	
+
+}
+
+
+
+
+
+
+/* Main Website */
+
+html{
+  overflow-x:hidden;
+}
+
+/* navbar */
+
+@media (max-width: 1024px){
+  .navbar-brand img {
+    height: 55px!important;
+    width: 160px!important;
+  }
+    .btn{
+    font-size:13px!important;
+    margin-top: 10px!important;
+    padding: 5px 16px!important;
+    }
+}
+/* footer */
+.logo_foot img {
+    width: 210px!important;
+}
+
+/* bannner */
+@media (max-width: 768px) {
+   .banner-content,li{
+	display: none !important;
+	}
+	.banner-content {
+		padding-right: 5%!important;
+		font-size: 14px;
+	}
+	section.banner {
+		height: 20vh!important;
+	}
+
+   .about-section .image-box {
+    background-size: cover;
+    background-position: -1px 0px !important;
+    background-repeat: no-repeat;
+   }
+
+
+}
+/* buy gemstone btn */
+@media (max-width:320px){
+   .btn{
+   font-size:10px !important;
+}
+}
+
+
+/* donation banner home */
+@media (max-width: 320px) {
+    .gcdxsww {
+        min-height: 1190px;
+    }
+}
+
+@media (max-width: 768px) and (min-width:426px){
+    .donation-content {
+        margin-top: 10 !important;
+    }
+}
+
+
+@media (max-width:425px) and (min-width:300px){
+	.donation-content h4{
+		margin-top:40px!important;
+		font-size:12px!important;
+	}
+.donation-content p {
+    font-size: 8px !important;
+}
+
+   .donation-content .donate-btn {
+        height: 15px !important;
+        padding: 0;
+        width: 100px;
+        font-size: 9px !important;
+        line-height: 15px !important;
+    }
+
+    .newsletter-btn{
+    height: 35px !important;
+	}
+
+}
+
+@media (max-width: 425px) {
+    .about-section .image-box {
+        min-height: 318px !important;
+        margin-top: 0px;
+    }
+}
+
+/about/
+@media (max-width:425px) and (min-width:300px){
+.about_rtp .mission img {
+    width: 100%;
+    border-radius: 20px;
+    height: 190px;
+    /* object-fit: cover; */
+}
+.enroll-btn {
+	font-size: 14px!important;
+	width: 40%!important;
+	padding: 6px!important;
+}
+}
+
+@media (max-width:1024px){
+    .contact-form {
+    padding: 40px;
+    /* flex-basis: 60%; */
+}
 }
