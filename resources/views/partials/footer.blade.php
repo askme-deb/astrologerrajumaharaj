@@ -43,8 +43,8 @@
                 <a href="javascript:;">Karma &amp; Destiny</a>
                 <a href="javascript:;">Refund Policy</a>
                 <a href="javascript:;">Shipping Policy</a>
-            
-             
+
+
             </div>
             <div class="col-lg-3 col-md-6 mb-4">
                 <div class="footer-col newsletter">
@@ -356,28 +356,7 @@
       });
    </script>
 
-   <script>
-      function toggleCart() {
-         document.getElementById("miniCart").classList.toggle("active");
-      }
 
-      // Close cart on outside click
-      document.addEventListener("click", function (e) {
-         const cart = document.getElementById("miniCart");
-         const icon = document.querySelector(".cart-icon");
-         if (!icon.contains(e.target) && !cart.contains(e.target)) {
-            cart.classList.remove("active");
-         }
-      });
-   </script>
-
-   <script>
-      function toggleSearch() {
-         const searchBox = document.getElementById('searchBox');
-         searchBox.classList.toggle('active');
-         searchBox.focus();
-      }
-   </script>
 
    <script>
       window.addEventListener("load", function () {
@@ -400,23 +379,23 @@
 
 
    <script>
-      document.querySelectorAll('.qty-control').forEach(control => {
-         const minusBtn = control.querySelector('.minus');
-         const plusBtn = control.querySelector('.plus');
-         const qtyValue = control.querySelector('.qty-value');
+    //   document.querySelectorAll('.qty-control').forEach(control => {
+    //      const minusBtn = control.querySelector('.minus');
+    //      const plusBtn = control.querySelector('.plus');
+    //      const qtyValue = control.querySelector('.qty-value');
 
-         minusBtn.addEventListener('click', () => {
-            let qty = parseInt(qtyValue.innerText);
-            if (qty > 1) {
-               qtyValue.innerText = qty - 1;
-            }
-         });
+    //      minusBtn.addEventListener('click', () => {
+    //         let qty = parseInt(qtyValue.innerText);
+    //         if (qty > 1) {
+    //            qtyValue.innerText = qty - 1;
+    //         }
+    //      });
 
-         plusBtn.addEventListener('click', () => {
-            let qty = parseInt(qtyValue.innerText);
-            qtyValue.innerText = qty + 1;
-         });
-      });
+    //      plusBtn.addEventListener('click', () => {
+    //         let qty = parseInt(qtyValue.innerText);
+    //         qtyValue.innerText = qty + 1;
+    //      });
+    //   });
    </script>
 
    <script>
@@ -431,44 +410,44 @@
    </script>
 
    <script>
-      function addToCart() {
-         alert("Product added to cart!");
-      }
+    //   function addToCart() {
+    //      alert("Product added to cart!");
+    //   }
 
-      function buyNow(product) {
-         alert("Buying: " + product);
-      }
+    //   function buyNow(product) {
+    //      alert("Buying: " + product);
+    //   }
    </script>
 
 
 
    <script>
-      document.addEventListener('DOMContentLoaded', () => {
+    //   document.addEventListener('DOMContentLoaded', () => {
 
-         // --- 1. Filter Logic ---
-         const filterBtns = document.querySelectorAll('.filter-btn');
-         const gridItems = document.querySelectorAll('.grid-item');
+    //      // --- 1. Filter Logic ---
+    //      const filterBtns = document.querySelectorAll('.filter-btn');
+    //      const gridItems = document.querySelectorAll('.grid-item');
 
-         filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-               // Remove active class from all buttons
-               filterBtns.forEach(b => b.classList.remove('active'));
-               // Add active class to clicked button
-               btn.classList.add('active');
+    //      filterBtns.forEach(btn => {
+    //         btn.addEventListener('click', () => {
+    //            // Remove active class from all buttons
+    //            filterBtns.forEach(b => b.classList.remove('active'));
+    //            // Add active class to clicked button
+    //            btn.classList.add('active');
 
-               const filterValue = btn.getAttribute('data-filter');
+    //            const filterValue = btn.getAttribute('data-filter');
 
-               gridItems.forEach(item => {
-                  if (filterValue === 'all' || item.classList.contains(filterValue)) {
-                     item.classList.remove('hide');
-                     item.classList.add('show');
-                  } else {
-                     item.classList.add('hide');
-                     item.classList.remove('show');
-                  }
-               });
-            });
-         });
+    //            gridItems.forEach(item => {
+    //               if (filterValue === 'all' || item.classList.contains(filterValue)) {
+    //                  item.classList.remove('hide');
+    //                  item.classList.add('show');
+    //               } else {
+    //                  item.classList.add('hide');
+    //                  item.classList.remove('show');
+    //               }
+    //            });
+    //         });
+    //      });
 
          // --- 2. Lightbox Logic ---
          const lightbox = document.getElementById('lightbox');
@@ -497,29 +476,29 @@
             }
          });
 
-      });
+    //   });
    </script>
 
 
    <script>
-      function openCategory(category) {
-         alert("Opening " + category + " category page...");
-         // You can redirect like:
-         // window.location.href = category + ".html";
-      }
+    //   function openCategory(category) {
+    //      alert("Opening " + category + " category page...");
+    //      // You can redirect like:
+    //      // window.location.href = category + ".html";
+    //   }
 
-      function viewArtist(name) {
-         alert("Viewing works of " + name);
-         // You can redirect to artist page here
+    //   function viewArtist(name) {
+    //      alert("Viewing works of " + name);
+    //      // You can redirect to artist page here
       }
    </script>
 
    <script>
-      function moreAbout() {
-         alert("Redirecting to About Page...");
-         // You can redirect:
-         // window.location.href = "about.html";
-      }
+    //   function moreAbout() {
+    //      alert("Redirecting to About Page...");
+    //      // You can redirect:
+    //      // window.location.href = "about.html";
+    //   }
    </script>
 
    <script>
