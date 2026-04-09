@@ -188,7 +188,7 @@ Choose the right products to align your energy and improve your lifestyle.
                               <div class="astro-meta mb-2">
                                  <span class="me-2"><i class="fas fa-briefcase"></i> {{ $astrologer['experience'] ?? '0' }} yrs exp</span>
                                  <span class="me-2"><i class="fas fa-clock"></i> {{ $astrologer['duration'] ?? '0' }} min</span>
-                                 <span><i class="fas fa-rupee-sign"></i> ₹{{ $astrologer['rate'] ?? '0' }}</span>
+                                 <span class="astroAmount"><i class="fas fa-rupee-sign"></i> ₹{{ $astrologer['rate'] ?? '0' }}</span>
                               </div>
                               <div class="astro-actions">
                                  <a href="https://jyotish.astrorajumaharaj.com/consultant/{{ $astrologer['id'] ?? '' }}" class="btn btn-success btn-appointment">
