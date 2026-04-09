@@ -37366,4 +37366,15 @@ span.skill-badge {
     .nhgd {
     padding: 0;
 }
+
+span.astroAmount {
+    float: left;
+    width: 100%;
+}
+
+.astro-info {
+    width: 53%;
+}
+
+.astro-actions {display: block;}
 }
