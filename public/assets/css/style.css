@@ -37343,7 +37343,7 @@ html{
 .banner-content div {font-size: 11px;}
 ul.guidance-list li {font-size: 10px;}
 .banner-content {padding-top: 10px;padding-right: 18% !important;}
-ul.guidance-list {margin-bottom: 0;}
+ul.guidance-list {margin-bottom: 0;display: flex;}
 .banner-content p {margin-bottom: 0;}
 .banner-content a.btn {margin-top: 2px !important;font-size: 10px !important;}
 .service-card p {text-align: justify;}
