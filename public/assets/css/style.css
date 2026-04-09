@@ -34765,7 +34765,7 @@ section.hero-section.gtrz {
     }
 
     .section-header h2{
-        font-size: 22px;
+        font-size: 18px;
         margin-bottom: 0;
     }
 
@@ -36463,10 +36463,11 @@ span.date {
     padding: 0px 25px;
 }
 
+
 .about_rtp .mission img {
     width: 100%;
     border-radius: 20px;
-    height: 500px;
+    /* height: 500px; */
     object-fit: cover;
 }
 .about_rtp .mission-text{
@@ -37099,15 +37100,15 @@ footer.footer {padding: 30px;}
 .about_rtp .section {padding: 0;}
 .about_rtp .mission {display: block;margin-top: 20px;}
 .about_rtp .mission-box {margin-top: 16px;}
-.about_rtp .stats {margin: 20px 0;}
-.about_rtp .stat h3 {font-size: 50px;}
+.about_rtp .stats {  margin: 20px 0;padding: 7px;}
+.about_rtp .stat h3 { font-size: 26px;}
 .art-column:not(:last-child) {border-right: none;}
 section.hero-section.gtrz {display: block;background: none;}
 .breadcrumb-section {
-    height: 170px;
-    background-size: cover;
-    padding: 20px;
-    background-position: 0px 0px;
+        height: 146px;
+        background-size: cover;
+        padding: 20px;
+        background-position: 0px 0px;
 }
 
 .breadcrumb-section h1 {
@@ -37225,8 +37226,8 @@ html{
 
 @media (max-width: 1024px){
   .navbar-brand img {
-    height: 55px!important;
-    width: 160px!important;
+      height: 55px !important;
+        width: auto !important;
   }
     .btn{
     font-size:13px!important;
@@ -37242,7 +37243,7 @@ html{
 /* bannner */
 @media (max-width: 768px) {
    .banner-content,li{
-	display: none !important;
+	 display: block !important;
 	}
 	.banner-content {
 		padding-right: 5%!important;
@@ -37332,4 +37333,26 @@ html{
     padding: 40px;
     /* flex-basis: 60%; */
 }
+}
+
+
+@media (max-width: 768px) {
+
+.vcxzsaw .top-bar {text-align: center;}
+.banner-content h2 {font-size: 14px;margin-bottom: 0;}
+.banner-content div {font-size: 11px;}
+ul.guidance-list li {font-size: 10px;}
+.banner-content {padding-top: 10px;padding-right: 18% !important;}
+ul.guidance-list {margin-bottom: 0;}
+.banner-content p {margin-bottom: 0;}
+.banner-content a.btn {margin-top: 2px !important;font-size: 10px !important;}
+.service-card p {text-align: justify;}
+.section-header.ypoe {text-align: center;align-items: anchor-center !important;gap: 0px;}
+a.view-all-btn {margin-bottom: 10px;}
+.banner-content h4 {font-size: 12px;font-weight: bold;margin-bottom: 0;}
+.info-card p {text-align: justify;}
+.stat p {font-size: 12px;}
+.about_rtp .mission img {height: 170px;}
+.gcdxsww {min-height: auto;}
+
 }
