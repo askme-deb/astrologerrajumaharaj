@@ -37355,4 +37355,15 @@ a.view-all-btn {margin-bottom: 10px;}
 .about_rtp .mission img {height: 170px;}
 .gcdxsww {min-height: auto;}
 
+
+span.skill-badge {
+        width: 100%;
+        float: left;
+        margin-bottom: 2px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .nhgd {
+    padding: 0;
+}
 }
