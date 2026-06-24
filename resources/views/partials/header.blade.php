@@ -65,7 +65,7 @@
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
                 <li><a href="https://jyotish.astrorajumaharaj.com">Consultation</a></li>
-                <li><a href="#">Online Classes</a></li>
+                <li><a href="https://education.astrorajumaharaj.com">Online Classes</a></li>
                 <li><a href="https://shop.astrorajumaharaj.com">Products</a></li>
                 <li><a href="/gallery">Gallery</a></li>
                 <li><a href="/blog">Blog</a></li>
@@ -87,7 +87,7 @@
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="https://jyotish.astrorajumaharaj.com">Consultation</a>
-    <a href="#">Online Classes</a>
+    <a href="https://education.astrorajumaharaj.com">Online Classes</a>
     <a href="https://shop.astrorajumaharaj.com/products">Products</a>
     <a href="/gallery">Gallery</a>
     <a href="/blog">Blog</a>
