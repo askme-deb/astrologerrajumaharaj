@@ -526,7 +526,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/download-1.svg"
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/aries.svg"
                                  alt="Aries">
                            </div>
                            <h5>Aries</h5>
@@ -537,7 +537,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/taurus.svg"
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/taurus.svg"
                                  alt="Taurus">
                            </div>
                            <h5>Taurus</h5>
@@ -548,7 +548,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/12/Gemini1.svg"
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/gemini.svg"
                                  alt="Gemini">
                            </div>
                            <h5>Gemini</h5>
@@ -559,7 +559,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/cancer.svg"
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/cancer.svg"
                                  alt="Cancer">
                            </div>
                            <h5>Cancer</h5>
@@ -570,7 +570,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/leo.svg"
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/leo.svg"
                                  alt="Leo">
                            </div>
                            <h5>Leo</h5>
@@ -581,7 +581,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/virgo.svg"
                                  alt="Virgo">
                            </div>
                            <h5>Virgo</h5>
@@ -592,8 +592,8 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                 alt="Virgo">
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/libra.svg"
+                                 alt="Libra">
                            </div>
                            <h5>Libra</h5>
                            <p>Aug 23 – Sep 22</p>
@@ -603,8 +603,8 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                 alt="Virgo">
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/scorpio.svg"
+                                 alt="Scorpio">
                            </div>
                            <h5>Scorpio</h5>
                            <p>Aug 23 – Sep 22</p>
@@ -614,8 +614,8 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
-                                 alt="Virgo">
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/sagittairus.svg"
+                                 alt="Sagittarius">
                            </div>
                            <h5>Sagittarius</h5>
                            <p>Aug 23 – Sep 22</p>
@@ -625,7 +625,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/virgo.svg"
                                  alt="Virgo">
                            </div>
                            <h5>Capricorn</h5>
@@ -636,7 +636,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/virgo.svg"
                                  alt="Virgo">
                            </div>
                            <h5>Aquarius</h5>
@@ -647,7 +647,7 @@ Choose the right products to align your energy and improve your lifestyle.
                         <a href="#" class="zodiac-card">
                            <div class="zodiac-icon">
                               <img
-                                 src="https://kamleshyadav.com/wp/astrologer/demo2/wp-content/uploads/sites/3/2021/09/virgo.svg"
+                                 src="https://jyotish.astrorajumaharaj.com/assets/images/zodiac/virgo.svg"
                                  alt="Virgo">
                            </div>
                            <h5>Pisces</h5>
